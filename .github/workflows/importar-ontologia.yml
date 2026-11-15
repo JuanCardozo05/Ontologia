@@ -1,0 +1,57 @@
+name: Importar archivos restantes de Ontologia
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/importar-ontologia.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extraer y verificar todos los archivos originales
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          import pathlib
+          import shutil
+          import zipfile
+
+          root = pathlib.Path.cwd().resolve()
+          imports = root / '.ontologia-import'
+          expected = json.loads((imports / 'integridad.json').read_text())
+          if len(expected) != 9367:
+              raise RuntimeError('El manifiesto no contiene los 9367 archivos esperados')
+          for archive in sorted(imports.glob('parte-*.zip')):
+              with zipfile.ZipFile(archive) as z:
+                  for item in z.infolist():
+                      destination = (root / item.filename).resolve()
+                      if not destination.is_relative_to(root) or not item.filename.startswith('.venv/'):
+                          raise RuntimeError('Ruta inesperada en el archivo de importación')
+                  z.extractall(root)
+          for name, digest in expected.items():
+              path = root / name
+              if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != digest:
+                  raise RuntimeError('La verificación falló: ' + name)
+          print('Verificados los 9367 archivos originales mediante SHA-256')
+          shutil.rmtree(imports)
+          PY
+      - name: Guardar los archivos en main
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --force -- .venv
+          git add --update -- .ontologia-import
+          if ! git diff --cached --quiet; then
+            git commit --quiet -m 'Completar carga de los 9367 archivos originales de Ontologia'
+            git push origin HEAD:main
+          fi
