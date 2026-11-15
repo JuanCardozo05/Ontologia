@@ -1,0 +1,62 @@
+{
+  "ontologia": {
+    "clases": 43,
+    "propiedades_objeto": 24,
+    "propiedades_datos": 19,
+    "axiomas_tripletas": 580
+  },
+  "grafo_tripletas": 311829,
+  "shacl": {
+    "conforme": true,
+    "observaciones_validadas": 23317,
+    "violaciones": 0,
+    "advertencias": 236,
+    "segundos": 466.1
+  },
+  "razonamiento_muestra": {
+    "municipio": "11001",
+    "tripletas_antes": 4190,
+    "tripletas_despues": 10428,
+    "observaciones": 247,
+    "inferidas_fibra_optica_owl": 117,
+    "inferidas_alta_velocidad_regla": 145,
+    "municipio_ubicado_en_colombia_transitividad": true,
+    "america_movil_controla_comcel_inversa": true,
+    "comcel_es_organizacion_por_subclase": true,
+    "segundos": 193.7
+  },
+  "consultas": {
+    "CQ1_participacion_nacional": {
+      "filas": 5,
+      "segundos": 81.1
+    },
+    "CQ2_participacion_departamento": {
+      "filas": 33,
+      "segundos": 122.1
+    },
+    "CQ3_claro_por_familia_tecnologica": {
+      "filas": 2,
+      "segundos": 7.0
+    },
+    "CQ4_oportunidad_sin_presencia": {
+      "filas": 20,
+      "segundos": 60.9
+    },
+    "CQ5_velocidad_por_estrato": {
+      "filas": 17,
+      "segundos": 137.5
+    },
+    "CQ6_amenaza_fibra_competencia": {
+      "filas": 15,
+      "segundos": 53.5
+    },
+    "CQ7_trazabilidad": {
+      "filas": 1,
+      "segundos": 0.1
+    },
+    "CQ8_gobierno_corporativo": {
+      "filas": 4,
+      "segundos": 0.2
+    }
+  }
+}

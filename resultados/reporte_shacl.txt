@@ -1,0 +1,1684 @@
+Validation Report
+Conforms: True
+
+
+Validation Report
+Conforms: True
+Results (38):
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-0343aa01d5608450>
+	Value Node: Literal("39202.50", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-05976b173eead1c4>
+	Value Node: Literal("12288.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-063b1f009cd8eb4b>
+	Value Node: Literal("25000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-0b5ad512b3b9dad2>
+	Value Node: Literal("500000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-0b704afb44c38da9>
+	Value Node: Literal("20480.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1260f5fdc2da6dbb>
+	Value Node: Literal("129744.44", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-129caedf3de01b0e>
+	Value Node: Literal("44373.75", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-13bed5e589d3135b>
+	Value Node: Literal("76486.58", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1497c2709433efd5>
+	Value Node: Literal("34985.46", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1590bbd64f01c69a>
+	Value Node: Literal("133120.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-15eaf242e246127a>
+	Value Node: Literal("138995.65", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-176fceb50721780a>
+	Value Node: Literal("31796.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-18e12ffb3d14fc38>
+	Value Node: Literal("20864.08", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1c983d1ef39595ba>
+	Value Node: Literal("66746.29", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1d37fd04c7b65e4b>
+	Value Node: Literal("16039.03", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1ea6b380c0b951f1>
+	Value Node: Literal("49937.50", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1f12e2268f1d08a7>
+	Value Node: Literal("10021.68", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-20355808612885fd>
+	Value Node: Literal("66281.79", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-28d2f0164ce29cd1>
+	Value Node: Literal("32428.89", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-295b8278074ac3fd>
+	Value Node: Literal("2560000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-0343aa01d5608450>
+	Value Node: Literal("39014.11", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-05976b173eead1c4>
+	Value Node: Literal("12288.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-063b1f009cd8eb4b>
+	Value Node: Literal("25000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-0b5ad512b3b9dad2>
+	Value Node: Literal("500000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1260f5fdc2da6dbb>
+	Value Node: Literal("129744.44", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-129caedf3de01b0e>
+	Value Node: Literal("44161.97", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-13bed5e589d3135b>
+	Value Node: Literal("76486.58", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1497c2709433efd5>
+	Value Node: Literal("34630.13", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1590bbd64f01c69a>
+	Value Node: Literal("133120.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-15eaf242e246127a>
+	Value Node: Literal("138995.65", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-176fceb50721780a>
+	Value Node: Literal("24371.20", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-18e12ffb3d14fc38>
+	Value Node: Literal("20864.08", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1c983d1ef39595ba>
+	Value Node: Literal("63780.57", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1d37fd04c7b65e4b>
+	Value Node: Literal("16000.30", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-1ea6b380c0b951f1>
+	Value Node: Literal("49937.50", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-20355808612885fd>
+	Value Node: Literal("66281.79", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-28d2f0164ce29cd1>
+	Value Node: Literal("32428.89", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-295b8278074ac3fd>
+	Value Node: Literal("2560000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+
+
+Validation Report
+Conforms: True
+Results (42):
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-2ef7194a311a7afa>
+	Value Node: Literal("74240.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-302035ac007e6afb>
+	Value Node: Literal("67734.26", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-335c344617e01699>
+	Value Node: Literal("22457.18", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3904de2f11ff9139>
+	Value Node: Literal("72674.67", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-399052885c4642a0>
+	Value Node: Literal("10240.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3b9990a38cd534cc>
+	Value Node: Literal("12403.85", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3c10fd349bcb55dc>
+	Value Node: Literal("19797.33", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3d30bbebf782ea5c>
+	Value Node: Literal("52563.39", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3e020915de75e2e2>
+	Value Node: Literal("500000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3fab83eac5922231>
+	Value Node: Literal("25602.39", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3fd303230441005c>
+	Value Node: Literal("61213.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-41b9c99b168ef37b>
+	Value Node: Literal("19100.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-42fc9694bec6454c>
+	Value Node: Literal("33792.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-43a671964914700e>
+	Value Node: Literal("100000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-4402643a7085fd33>
+	Value Node: Literal("15360.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-470cdf2d5f2c0122>
+	Value Node: Literal("30000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-4c623e792f261235>
+	Value Node: Literal("40300.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-4f2766902d98793b>
+	Value Node: Literal("30720.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-4fd4a9e9be6c3ab1>
+	Value Node: Literal("93030.40", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-547de1cd66003439>
+	Value Node: Literal("11800.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-56c885859b269484>
+	Value Node: Literal("13198.22", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-57bb78a8a5cd1b35>
+	Value Node: Literal("12005.68", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-2ef7194a311a7afa>
+	Value Node: Literal("74240.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-302035ac007e6afb>
+	Value Node: Literal("67723.13", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-335c344617e01699>
+	Value Node: Literal("22387.36", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3904de2f11ff9139>
+	Value Node: Literal("71608.44", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-399052885c4642a0>
+	Value Node: Literal("10240.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3b9990a38cd534cc>
+	Value Node: Literal("12403.85", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3c10fd349bcb55dc>
+	Value Node: Literal("19797.33", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3d30bbebf782ea5c>
+	Value Node: Literal("52529.49", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3e020915de75e2e2>
+	Value Node: Literal("500000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3fab83eac5922231>
+	Value Node: Literal("25602.39", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-3fd303230441005c>
+	Value Node: Literal("60817.40", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-41b9c99b168ef37b>
+	Value Node: Literal("19100.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-42fc9694bec6454c>
+	Value Node: Literal("33792.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-43a671964914700e>
+	Value Node: Literal("100000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-4402643a7085fd33>
+	Value Node: Literal("15360.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-470cdf2d5f2c0122>
+	Value Node: Literal("30000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-4f2766902d98793b>
+	Value Node: Literal("30720.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-4fd4a9e9be6c3ab1>
+	Value Node: Literal("92293.12", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-56c885859b269484>
+	Value Node: Literal("13198.22", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-57bb78a8a5cd1b35>
+	Value Node: Literal("12005.68", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+
+
+Validation Report
+Conforms: True
+Results (38):
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-5af1ce3ed4916144>
+	Value Node: Literal("48355.56", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-5b1ee00273a781a6>
+	Value Node: Literal("45766.05", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-5db148e067ee63a1>
+	Value Node: Literal("502250.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-6025bab0380fb762>
+	Value Node: Literal("78239.48", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-65b1222067b30eaa>
+	Value Node: Literal("51200.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-65f51b0921d8b315>
+	Value Node: Literal("51200.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-681bdae337ccc4dc>
+	Value Node: Literal("94077.46", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-68b3155787fec7bc>
+	Value Node: Literal("10240.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-6a760bf434852a79>
+	Value Node: Literal("25245.90", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-6b7810330e4ee14a>
+	Value Node: Literal("27772.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-6e1b9720c39dba1b>
+	Value Node: Literal("12673.28", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-74ca018018dbf983>
+	Value Node: Literal("11093.33", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-7567bad24235c900>
+	Value Node: Literal("37642.42", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-75f9b8615f001b2e>
+	Value Node: Literal("350000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-78aa055404ac5122>
+	Value Node: Literal("46175.25", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-7ac0a27524cd1235>
+	Value Node: Literal("30720.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-7d55c25e8bd3c693>
+	Value Node: Literal("62626.34", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-810009ab3f739870>
+	Value Node: Literal("117760.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-83eb94740993d9a2>
+	Value Node: Literal("63014.27", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-5af1ce3ed4916144>
+	Value Node: Literal("38115.56", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-5b1ee00273a781a6>
+	Value Node: Literal("45746.91", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-5db148e067ee63a1>
+	Value Node: Literal("502250.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-6025bab0380fb762>
+	Value Node: Literal("78239.48", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-65b1222067b30eaa>
+	Value Node: Literal("51200.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-65f51b0921d8b315>
+	Value Node: Literal("51200.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-681bdae337ccc4dc>
+	Value Node: Literal("92549.69", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-68b3155787fec7bc>
+	Value Node: Literal("10240.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-6a760bf434852a79>
+	Value Node: Literal("25245.90", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-6b7810330e4ee14a>
+	Value Node: Literal("27772.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-6e1b9720c39dba1b>
+	Value Node: Literal("12673.28", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-74ca018018dbf983>
+	Value Node: Literal("11093.33", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-7567bad24235c900>
+	Value Node: Literal("37511.16", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-75f9b8615f001b2e>
+	Value Node: Literal("350000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-78aa055404ac5122>
+	Value Node: Literal("45968.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-7ac0a27524cd1235>
+	Value Node: Literal("30720.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-7d55c25e8bd3c693>
+	Value Node: Literal("62626.34", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-810009ab3f739870>
+	Value Node: Literal("117760.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-83eb94740993d9a2>
+	Value Node: Literal("62984.03", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+
+
+Validation Report
+Conforms: True
+Results (37):
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-84ffaec08e3d9935>
+	Value Node: Literal("10050.37", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-86f81abc702f96a8>
+	Value Node: Literal("12288.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-8d051bf7ace10bab>
+	Value Node: Literal("93459.55", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-8dd3c9298a2f7228>
+	Value Node: Literal("12288.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-9017d3747580176d>
+	Value Node: Literal("10752.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-909ce763eeab3c9a>
+	Value Node: Literal("27136.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-9156532a13cf5c67>
+	Value Node: Literal("49632.23", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-9177d1dd56accc2d>
+	Value Node: Literal("33663.15", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-94fd79d038f01f03>
+	Value Node: Literal("10300.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-9b3afaf41708def2>
+	Value Node: Literal("30499.18", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-9c7926c516dba0f3>
+	Value Node: Literal("13341.35", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-9dbca07ffba6b36f>
+	Value Node: Literal("34704.85", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-a1a369cdbfdada00>
+	Value Node: Literal("20480.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-a2faadc8a995f576>
+	Value Node: Literal("25000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-a41f27b82dded177>
+	Value Node: Literal("12288.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-a4f2ad472c3bd94e>
+	Value Node: Literal("14966.67", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-a53990066c7616a3>
+	Value Node: Literal("10024.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-a7db2b1a5c5eb014>
+	Value Node: Literal("15000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-aa385fb22fb17964>
+	Value Node: Literal("19300.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-ac1c63b66ff76f02>
+	Value Node: Literal("61440.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-86f81abc702f96a8>
+	Value Node: Literal("12288.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-8d051bf7ace10bab>
+	Value Node: Literal("93459.55", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-8dd3c9298a2f7228>
+	Value Node: Literal("12288.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-9017d3747580176d>
+	Value Node: Literal("10752.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-909ce763eeab3c9a>
+	Value Node: Literal("23808.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-9156532a13cf5c67>
+	Value Node: Literal("49518.56", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-9177d1dd56accc2d>
+	Value Node: Literal("33663.15", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-9b3afaf41708def2>
+	Value Node: Literal("30499.18", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-9c7926c516dba0f3>
+	Value Node: Literal("13341.35", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-9dbca07ffba6b36f>
+	Value Node: Literal("34458.64", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-a1a369cdbfdada00>
+	Value Node: Literal("20480.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-a2faadc8a995f576>
+	Value Node: Literal("25000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-a41f27b82dded177>
+	Value Node: Literal("12288.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-a4f2ad472c3bd94e>
+	Value Node: Literal("10576.11", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-a53990066c7616a3>
+	Value Node: Literal("10024.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-a7db2b1a5c5eb014>
+	Value Node: Literal("15000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-ac1c63b66ff76f02>
+	Value Node: Literal("61440.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+
+
+Validation Report
+Conforms: True
+Results (47):
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-b1363daac442c82e>
+	Value Node: Literal("49337.20", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-b13b1fff94abb59f>
+	Value Node: Literal("51703.14", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-b1a4decf50470aea>
+	Value Node: Literal("46233.48", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-b2cf5de153c9734f>
+	Value Node: Literal("17263.74", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-b96d3a1870eb4b87>
+	Value Node: Literal("34225.60", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-b9c5ad2b00892ee8>
+	Value Node: Literal("46046.51", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-bd1d35bb57dc3a73>
+	Value Node: Literal("10202.42", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-be9a3df74a12cff6>
+	Value Node: Literal("14333.33", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-c0ea271702e99959>
+	Value Node: Literal("12039.87", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-c1c799f94f657f99>
+	Value Node: Literal("47464.06", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-c2ee1c687432ece3>
+	Value Node: Literal("46184.09", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-c88af58761ac4d59>
+	Value Node: Literal("35547.43", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-c8d45f1aa3731128>
+	Value Node: Literal("93866.67", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-c9f3877fc6022884>
+	Value Node: Literal("12732.04", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-cb578d0da03a4f24>
+	Value Node: Literal("163780.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-ce282c1d008275d2>
+	Value Node: Literal("45056.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-ce4950ca4c0c5b2c>
+	Value Node: Literal("27000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-d6e9713b6d138444>
+	Value Node: Literal("13340.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-d724bd5394e73477>
+	Value Node: Literal("98857.14", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-d878f2ffbf9f7f2f>
+	Value Node: Literal("84163.64", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-d8d4b54a519845ec>
+	Value Node: Literal("83855.56", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-da21e7427fc9cbf6>
+	Value Node: Literal("66560.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-db3f3888c3247bc7>
+	Value Node: Literal("100000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-db8eb28f7a568fcb>
+	Value Node: Literal("19337.88", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-b1363daac442c82e>
+	Value Node: Literal("49309.42", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-b13b1fff94abb59f>
+	Value Node: Literal("51558.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-b1a4decf50470aea>
+	Value Node: Literal("45332.23", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-b2cf5de153c9734f>
+	Value Node: Literal("17263.74", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-b96d3a1870eb4b87>
+	Value Node: Literal("34225.60", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-b9c5ad2b00892ee8>
+	Value Node: Literal("46046.51", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-bd1d35bb57dc3a73>
+	Value Node: Literal("10202.42", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-be9a3df74a12cff6>
+	Value Node: Literal("14333.33", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-c0ea271702e99959>
+	Value Node: Literal("12039.87", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-c1c799f94f657f99>
+	Value Node: Literal("47435.59", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-c2ee1c687432ece3>
+	Value Node: Literal("45591.91", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-c88af58761ac4d59>
+	Value Node: Literal("26345.71", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-c8d45f1aa3731128>
+	Value Node: Literal("93866.67", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-cb578d0da03a4f24>
+	Value Node: Literal("163780.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-ce282c1d008275d2>
+	Value Node: Literal("45056.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-ce4950ca4c0c5b2c>
+	Value Node: Literal("27000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-d6e9713b6d138444>
+	Value Node: Literal("13340.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-d724bd5394e73477>
+	Value Node: Literal("94354.29", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-d878f2ffbf9f7f2f>
+	Value Node: Literal("84163.64", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-d8d4b54a519845ec>
+	Value Node: Literal("25146.67", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-da21e7427fc9cbf6>
+	Value Node: Literal("66560.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-db3f3888c3247bc7>
+	Value Node: Literal("100000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-db8eb28f7a568fcb>
+	Value Node: Literal("19337.88", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+
+
+Validation Report
+Conforms: True
+Results (34):
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-e194d5d2c4675c32>
+	Value Node: Literal("18273.10", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-e91453b2fb54df6e>
+	Value Node: Literal("17554.36", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-e98eaab67bdd58f5>
+	Value Node: Literal("12288.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-ea72fedd2fb704cc>
+	Value Node: Literal("15548.63", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-eb82122ffd6edc73>
+	Value Node: Literal("12288.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-eccaa0801ec95d5b>
+	Value Node: Literal("18116.92", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-ed1679355fbdbed0>
+	Value Node: Literal("10322.22", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-ee838d4425c06c22>
+	Value Node: Literal("25600.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-eed4066001a7aca7>
+	Value Node: Literal("149267.07", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-f2fe2b8c0cbb52da>
+	Value Node: Literal("20000.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-f389b9c6646a33ef>
+	Value Node: Literal("31217.24", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-f5b785cb25520174>
+	Value Node: Literal("512500.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-f5e084943de91905>
+	Value Node: Literal("37629.24", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-f64e2cec132b447a>
+	Value Node: Literal("174175.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-f93c3e0b8696dbff>
+	Value Node: Literal("10240.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-fa6513eec781cb4f>
+	Value Node: Literal("22360.61", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-fb258c47f680d375>
+	Value Node: Literal("83941.18", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadBajadaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-fb5678c0e624bb30>
+	Value Node: Literal("41117.76", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadBajadaMbps>
+	Message: Velocidad de bajada > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-e194d5d2c4675c32>
+	Value Node: Literal("18273.10", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-e91453b2fb54df6e>
+	Value Node: Literal("15873.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-e98eaab67bdd58f5>
+	Value Node: Literal("12288.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-ea72fedd2fb704cc>
+	Value Node: Literal("15548.63", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-eb82122ffd6edc73>
+	Value Node: Literal("12288.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-eccaa0801ec95d5b>
+	Value Node: Literal("18116.92", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-ee838d4425c06c22>
+	Value Node: Literal("25600.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-eed4066001a7aca7>
+	Value Node: Literal("149267.07", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-f389b9c6646a33ef>
+	Value Node: Literal("31217.24", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-f5b785cb25520174>
+	Value Node: Literal("512500.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-f5e084943de91905>
+	Value Node: Literal("37364.95", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-f64e2cec132b447a>
+	Value Node: Literal("174175.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-f93c3e0b8696dbff>
+	Value Node: Literal("10240.00", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-fa6513eec781cb4f>
+	Value Node: Literal("58070.17", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-fb258c47f680d375>
+	Value Node: Literal("83941.18", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.
+Validation Result in MaxInclusiveConstraintComponent (http://www.w3.org/ns/shacl#MaxInclusiveConstraintComponent):
+	Severity: sh:Warning
+	Source Shape: [ sh:maxInclusive Literal("10000", datatype=xsd:integer) ; sh:message Literal("Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.", lang=es) ; sh:path <https://w3id.org/cotel/ontology#velocidadSubidaMbps> ; sh:severity sh:Warning ]
+	Focus Node: <https://w3id.org/cotel/resource/obs-if-fb5678c0e624bb30>
+	Value Node: Literal("40984.37", datatype=xsd:decimal)
+	Result Path: <https://w3id.org/cotel/ontology#velocidadSubidaMbps>
+	Message: Velocidad de subida > 10 Gbps: posible error de unidades en la fuente.

@@ -1,0 +1,18 @@
+﻿segmento,grupo,velocidadBajadaMbps,accesos
+Corporativo,Claro,235.43,156676
+Corporativo,Resto del mercado,245.17,491551
+Residencial estrato 1,Claro,153.04,245921
+Residencial estrato 1,Resto del mercado,103.97,739646
+Residencial estrato 2,Claro,200.01,1330994
+Residencial estrato 2,Resto del mercado,150.64,1889033
+Residencial estrato 3,Claro,275.53,969302
+Residencial estrato 3,Resto del mercado,273.75,1539169
+Residencial estrato 4,Claro,282.22,357155
+Residencial estrato 4,Resto del mercado,291.79,529394
+Residencial estrato 5,Claro,308.73,103531
+Residencial estrato 5,Resto del mercado,339.54,182754
+Residencial estrato 6,Claro,322.53,77294
+Residencial estrato 6,Resto del mercado,291.72,135288
+Sin estratificar,Resto del mercado,24.33,151530
+Uso propio interno del operador,Claro,198.91,1414
+Uso propio interno del operador,Resto del mercado,20.82,3110

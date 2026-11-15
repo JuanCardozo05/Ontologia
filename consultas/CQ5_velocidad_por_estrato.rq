@@ -1,0 +1,16 @@
+PREFIX cot:  <https://w3id.org/cotel/ontology#>
+PREFIX res:  <https://w3id.org/cotel/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+# CQ5. ¿Cuál es la velocidad de bajada promedio (ponderada por accesos) de Claro frente al resto del mercado, por segmento?
+SELECT ?segmento ?grupo (ROUND(100 * SUM(?v * ?n) / SUM(?n)) / 100 AS ?velocidadBajadaMbps) (SUM(?n) AS ?accesos)
+WHERE {
+  ?obs a cot:ObservacionAccesos ; cot:reportadoPor ?p ; cot:numeroAccesos ?n ;
+       cot:velocidadBajadaMbps ?v ; cot:enSegmento/skos:prefLabel ?segmento .
+  BIND (IF(?p = res:org-comcel, "Claro", "Resto del mercado") AS ?grupo)
+  # Excluye valores atípicos (> 10 Gbps) señalados como advertencia por SHACL.
+  FILTER (?n > 0 && ?v <= 10000)
+}
+GROUP BY ?segmento ?grupo
+ORDER BY ?segmento ?grupo

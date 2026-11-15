@@ -1,0 +1,79 @@
+@prefix cot:    <https://w3id.org/cotel/ontology#> .
+@prefix res:    <https://w3id.org/cotel/resource/> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+
+#  Base curada manualmente: hechos públicos estables.
+#  Todo dato con "VERIFICAR" en rdfs:comment debe contrastarse con la fuente oficial antes de publicarse.
+
+res:pais-colombia a cot:Pais ;
+    rdfs:label "Colombia"@es ; cot:codigoDANE "170" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q739> .
+
+## Grupo y operador
+res:org-america-movil a cot:GrupoEmpresarial ;
+    rdfs:label "América Móvil"@es ; cot:razonSocial "América Móvil, S.A.B. de C.V." .
+
+res:org-comcel a cot:ProveedorRedesServicios ;
+    rdfs:label "Claro Colombia (Comcel)"@es ;
+    cot:razonSocial "COMUNICACION CELULAR S A COMCEL S A" ;
+    cot:nit "800153993-7" ;
+    rdfs:comment "VERIFICAR NIT en el RUES antes de publicar."@es ;
+    cot:esSubsidiariaDe res:org-america-movil ;
+    cot:operaMarca res:marca-claro ;
+    cot:reguladoPor res:org-crc , res:org-mintic , res:org-sic , res:org-ane .
+
+res:org-telmex-colombia a cot:ProveedorRedesServicios ;
+    rdfs:label "Telmex Colombia"@es ;
+    cot:razonSocial "TELMEX COLOMBIA S.A." ;
+    cot:fusionadaEn res:org-comcel ;
+    rdfs:comment "Razón social histórica de la operación fija de Claro, presente en series anteriores de MinTIC. VERIFICAR fecha y acto de fusión."@es .
+
+res:marca-claro a cot:MarcaComercial ;
+    rdfs:label "Claro"@es ; schema:url <https://www.claro.com.co/> .
+
+## Entidades públicas
+res:org-mintic a cot:EntidadRegulatoria ;
+    rdfs:label "Ministerio de Tecnologías de la Información y las Comunicaciones (MinTIC)"@es ;
+    schema:url <https://www.mintic.gov.co/> .
+res:org-crc a cot:EntidadRegulatoria ;
+    rdfs:label "Comisión de Regulación de Comunicaciones (CRC)"@es ;
+    schema:url <https://www.crcom.gov.co/> .
+res:org-ane a cot:EntidadRegulatoria ;
+    rdfs:label "Agencia Nacional del Espectro (ANE)"@es ;
+    schema:url <https://www.ane.gov.co/> .
+res:org-sic a cot:EntidadRegulatoria ;
+    rdfs:label "Superintendencia de Industria y Comercio (SIC)"@es ;
+    schema:url <https://www.sic.gov.co/> .
+
+## Fuentes de datos (DCAT)
+res:fuente-mintic-internet-fijo a cot:FuenteDatos ;
+    dct:title "Internet Fijo Accesos por tecnología y segmento"@es ;
+    dct:publisher res:org-mintic ;
+    dcat:landingPage <https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/Internet-Fijo-Accesos-por-tecnolog-a-y-segmento/n48w-gutb> ;
+    dcat:distribution [ a dcat:Distribution ;
+        dcat:accessURL <https://www.datos.gov.co/resource/n48w-gutb.json> ;
+        dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ] ;
+    dct:accrualPeriodicity <http://purl.org/cld/freq/quarterly> ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    rdfs:comment "VERIFICAR licencia exacta en la ficha del conjunto de datos."@es .
+
+res:fuente-crc-postdata a cot:FuenteDatos ;
+    dct:title "Postdata / DaTIC - datos del sector TIC y postal"@es ;
+    dct:publisher res:org-crc ;
+    dcat:landingPage <https://www.postdata.gov.co/> , <https://datic.postdata.gov.co/> .
+
+res:fuente-ane-espectro a cot:FuenteDatos ;
+    dct:title "Información pública de asignación de espectro radioeléctrico"@es ;
+    dct:publisher res:org-ane ;
+    dcat:landingPage <https://www.ane.gov.co/> .
+
+res:fuente-claro-sostenibilidad a cot:FuenteDatos ;
+    dct:title "Informes de sostenibilidad de Claro Colombia / América Móvil"@es ;
+    dct:publisher res:org-comcel ;
+    dcat:landingPage <https://www.claro.com.co/> .

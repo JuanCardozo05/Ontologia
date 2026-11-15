@@ -1,0 +1,15 @@
+﻿PREFIX cot:  <https://w3id.org/cotel/ontology#>
+PREFIX res:  <https://w3id.org/cotel/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+# CQ1. ¿Cuántos accesos de Internet fijo tiene Claro y cuál es su participación nacional, frente a los principales competidores?
+SELECT ?proveedor (SUM(?n) AS ?accesos) (ROUND(10000 * SUM(?n) / ?total) / 100 AS ?participacionPct)
+WHERE {
+  { SELECT (SUM(?t) AS ?total) WHERE { ?o a cot:ObservacionAccesos ; cot:numeroAccesos ?t } }
+  ?obs a cot:ObservacionAccesos ; cot:reportadoPor ?p ; cot:numeroAccesos ?n .
+  ?p cot:razonSocial ?proveedor .
+}
+GROUP BY ?proveedor ?total
+ORDER BY DESC(?accesos)
+LIMIT 5

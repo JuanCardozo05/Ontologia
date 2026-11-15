@@ -1,0 +1,17 @@
+[
+  "pipeline/test_pipeline.py::test_decimal_es[-None]",
+  "pipeline/test_pipeline.py::test_decimal_es[1.000,50-esperado2]",
+  "pipeline/test_pipeline.py::test_decimal_es[300,00-esperado1]",
+  "pipeline/test_pipeline.py::test_decimal_es[5,12-esperado0]",
+  "pipeline/test_pipeline.py::test_decimal_es[abc-None]",
+  "pipeline/test_pipeline.py::test_ftth_es_tecnologia_de_fibra",
+  "pipeline/test_pipeline.py::test_segmento_desconocido_falla",
+  "pipeline/test_pipeline.py::test_segmentos[CORPORATIVO-seg-corporativo]",
+  "pipeline/test_pipeline.py::test_segmentos[RESIDENCIAL - ESTRATO 3-seg-estrato-3]",
+  "pipeline/test_pipeline.py::test_segmentos[SIN ESTRATIFICAR-seg-sin-estratificar]",
+  "pipeline/test_pipeline.py::test_segmentos[USO PROPIO INTERNO DEL OPERADOR-seg-uso-propio]",
+  "pipeline/test_pipeline.py::test_shacl_acepta_observacion_valida",
+  "pipeline/test_pipeline.py::test_shacl_rechaza_dane_inconsistente",
+  "pipeline/test_pipeline.py::test_shacl_rechaza_observacion_sin_accesos",
+  "pipeline/test_pipeline.py::test_todas_las_tecnologias_mintic_tienen_concepto"
+]

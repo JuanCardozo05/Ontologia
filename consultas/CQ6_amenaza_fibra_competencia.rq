@@ -1,0 +1,27 @@
+﻿PREFIX cot:  <https://w3id.org/cotel/ontology#>
+PREFIX res:  <https://w3id.org/cotel/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+# CQ6. ¿En qué municipios donde Claro tiene más de 10.000 accesos tiene la competencia mayor proporción de fibra óptica?
+#      (amenaza competitiva y priorización de despliegue de fibra)
+SELECT ?municipio ?accesosClaro ?accesosCompetencia ?fibraCompetencia
+       (ROUND(10000 * ?fibraCompetencia / ?accesosCompetencia) / 100 AS ?fibraCompetenciaPct)
+       (ROUND(10000 * ?accesosClaro / (?accesosClaro + ?accesosCompetencia)) / 100 AS ?participacionClaroPct)
+WHERE {
+  {
+    SELECT ?m (SUM(?nClaro) AS ?accesosClaro) (SUM(?nComp) AS ?accesosCompetencia) (SUM(?nFibraComp) AS ?fibraCompetencia)
+    WHERE {
+      ?obs a cot:ObservacionAccesos ; cot:enMunicipio ?m ; cot:reportadoPor ?p ;
+           cot:numeroAccesos ?n ; cot:usaTecnologia/skos:broader ?familia .
+      BIND (IF(?p = res:org-comcel, ?n, 0) AS ?nClaro)
+      BIND (IF(?p != res:org-comcel, ?n, 0) AS ?nComp)
+      BIND (IF(?p != res:org-comcel && ?familia = cot:tec-familia-fibra, ?n, 0) AS ?nFibraComp)
+    }
+    GROUP BY ?m
+    HAVING (SUM(?nClaro) > 10000 && SUM(?nComp) > 0)
+  }
+  ?m rdfs:label ?municipio .
+}
+ORDER BY DESC(?fibraCompetenciaPct)
+LIMIT 15

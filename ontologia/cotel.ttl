@@ -1,0 +1,472 @@
+@prefix cot:    <https://w3id.org/cotel/ontology#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix org:    <http://www.w3.org/ns/org#> .
+@prefix schema: <https://schema.org/> .
+@prefix qb:     <http://purl.org/linked-data/cube#> .
+@prefix time:   <http://www.w3.org/2006/time#> .
+@prefix geo:    <http://www.opengis.net/ont/geosparql#> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+
+#################################################################
+#  Metadatos de la ontología
+#################################################################
+
+<https://w3id.org/cotel/ontology>
+    a owl:Ontology ;
+    dct:title "COTEL: Ontología de datos públicos de telecomunicaciones de Colombia (caso Claro)"@es ,
+              "COTEL: Ontology of Colombian public telecommunications data (Claro case)"@en ;
+    dct:description """Ontología OWL 2 que integra datos abiertos de MinTIC, CRC, ANE y SIC, y la información
+pública corporativa de Claro Colombia. Modela operadores, servicios, tecnologías, territorio,
+periodos, observaciones estadísticas, espectro, regulación, planes comerciales e indicadores
+de calidad y sostenibilidad, con trazabilidad de la fuente."""@es ;
+    dct:creator "Proyecto de grado" ;
+    dct:created "2026-11-04"^^xsd:date ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    owl:versionInfo "0.1.0" ;
+    owl:versionIRI <https://w3id.org/cotel/ontology/0.1.0> ;
+    vann:preferredNamespacePrefix "cot" ;
+    vann:preferredNamespaceUri "https://w3id.org/cotel/ontology#" ;
+    rdfs:comment "Reutiliza W3C ORG, schema.org, RDF Data Cube, OWL-Time, GeoSPARQL, DCAT, PROV-O y SKOS."@es .
+
+#################################################################
+#  Clases: organizaciones
+#################################################################
+
+cot:Organizacion a owl:Class ;
+    rdfs:subClassOf org:Organization , schema:Organization ;
+    rdfs:label "Organización"@es , "Organization"@en .
+
+cot:GrupoEmpresarial a owl:Class ;
+    rdfs:subClassOf cot:Organizacion ;
+    rdfs:label "Grupo empresarial"@es ;
+    skos:definition "Conglomerado que controla una o varias empresas operadoras (p. ej., América Móvil)."@es .
+
+cot:ProveedorRedesServicios a owl:Class ;
+    rdfs:subClassOf cot:Organizacion , org:FormalOrganization ;
+    rdfs:label "Proveedor de redes y servicios de telecomunicaciones (PRST)"@es ;
+    skos:definition "Persona jurídica habilitada en Colombia para proveer redes y servicios de telecomunicaciones."@es .
+
+cot:EntidadPublica a owl:Class ;
+    rdfs:subClassOf cot:Organizacion , schema:GovernmentOrganization ;
+    rdfs:label "Entidad pública"@es .
+
+cot:EntidadRegulatoria a owl:Class ;
+    rdfs:subClassOf cot:EntidadPublica ;
+    rdfs:label "Entidad regulatoria o de vigilancia"@es ;
+    skos:example "CRC, MinTIC, ANE, SIC"@es .
+
+cot:MarcaComercial a owl:Class ;
+    rdfs:subClassOf schema:Brand ;
+    rdfs:label "Marca comercial"@es .
+
+cot:ProveedorRedesServicios owl:disjointWith cot:EntidadPublica .
+
+#################################################################
+#  Clases: servicios y tecnologías
+#################################################################
+
+cot:ServicioTelecomunicaciones a owl:Class ;
+    rdfs:subClassOf schema:Service ;
+    rdfs:label "Servicio de telecomunicaciones"@es .
+
+cot:InternetFijo         a owl:Class ; rdfs:subClassOf cot:ServicioTelecomunicaciones ; rdfs:label "Internet fijo"@es .
+cot:InternetMovil        a owl:Class ; rdfs:subClassOf cot:ServicioTelecomunicaciones ; rdfs:label "Internet móvil"@es .
+cot:TelefoniaMovil       a owl:Class ; rdfs:subClassOf cot:ServicioTelecomunicaciones ; rdfs:label "Telefonía móvil"@es .
+cot:TelefoniaFija        a owl:Class ; rdfs:subClassOf cot:ServicioTelecomunicaciones ; rdfs:label "Telefonía fija"@es .
+cot:TelevisionSuscripcion a owl:Class ; rdfs:subClassOf cot:ServicioTelecomunicaciones ; rdfs:label "Televisión por suscripción"@es .
+
+[] a owl:AllDisjointClasses ;
+   owl:members ( cot:InternetFijo cot:InternetMovil cot:TelefoniaMovil cot:TelefoniaFija cot:TelevisionSuscripcion ) .
+
+cot:TecnologiaAcceso a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Tecnología de acceso"@es ;
+    skos:definition "Valor del esquema de conceptos de tecnologías (FTTH, HFC/cable, xDSL, 4G, 5G, satelital...)."@es .
+
+cot:SegmentoMercado a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Segmento de mercado"@es ;
+    skos:definition "Residencial por estrato socioeconómico (1 a 6) o corporativo."@es .
+
+#################################################################
+#  Clases: territorio y tiempo
+#################################################################
+
+cot:EntidadTerritorial a owl:Class ;
+    rdfs:subClassOf geo:Feature , schema:AdministrativeArea ;
+    rdfs:label "Entidad territorial"@es .
+
+cot:Pais          a owl:Class ; rdfs:subClassOf cot:EntidadTerritorial ; rdfs:label "País"@es .
+cot:Departamento  a owl:Class ; rdfs:subClassOf cot:EntidadTerritorial ; rdfs:label "Departamento"@es .
+cot:Municipio     a owl:Class ; rdfs:subClassOf cot:EntidadTerritorial ; rdfs:label "Municipio"@es .
+
+[] a owl:AllDisjointClasses ; owl:members ( cot:Pais cot:Departamento cot:Municipio ) .
+
+cot:Municipio rdfs:subClassOf [
+    a owl:Restriction ; owl:onProperty cot:perteneceADepartamento ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass cot:Departamento ] .
+
+cot:PeriodoReporte a owl:Class ;
+    rdfs:subClassOf time:ProperInterval ;
+    rdfs:label "Periodo de reporte"@es .
+
+cot:Trimestre a owl:Class ; rdfs:subClassOf cot:PeriodoReporte ; rdfs:label "Trimestre"@es .
+cot:Anio      a owl:Class ; rdfs:subClassOf cot:PeriodoReporte ; rdfs:label "Año"@es .
+
+#################################################################
+#  Clases: observaciones estadísticas (RDF Data Cube)
+#################################################################
+
+cot:Observacion a owl:Class ;
+    rdfs:subClassOf qb:Observation ;
+    rdfs:label "Observación estadística"@es .
+
+cot:ObservacionAccesos a owl:Class ;
+    rdfs:subClassOf cot:Observacion ;
+    rdfs:label "Observación de accesos"@es ;
+    skos:definition "Número de accesos de un servicio reportado por un proveedor, en un municipio, periodo, tecnología, segmento y plan de velocidad."@es ;
+    rdfs:subClassOf
+        [ a owl:Restriction ; owl:onProperty cot:reportadoPor ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass cot:ProveedorRedesServicios ] ,
+        [ a owl:Restriction ; owl:onProperty cot:enMunicipio ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass cot:Municipio ] ,
+        [ a owl:Restriction ; owl:onProperty cot:enPeriodo ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass cot:PeriodoReporte ] ,
+        [ a owl:Restriction ; owl:onProperty cot:numeroAccesos ; owl:cardinality "1"^^xsd:nonNegativeInteger ] .
+
+cot:ObservacionCalidad a owl:Class ;
+    rdfs:subClassOf cot:Observacion ;
+    rdfs:label "Observación de indicador de calidad"@es .
+
+cot:ObservacionPQR a owl:Class ;
+    rdfs:subClassOf cot:Observacion ;
+    rdfs:label "Observación de peticiones, quejas y reclamos"@es .
+
+cot:IndicadorCalidad a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Indicador de calidad"@es .
+
+## Clases definidas (equivalencias) para clasificación automática con un razonador OWL 2 DL
+cot:ObservacionAltaVelocidad a owl:Class ;
+    rdfs:label "Observación de acceso de alta velocidad"@es ;
+    skos:definition "Accesos con velocidad de bajada de al menos 25 Mbps."@es ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf ( cot:ObservacionAccesos
+            [ a owl:Restriction ; owl:onProperty cot:velocidadBajadaMbps ;
+              owl:someValuesFrom [ a rdfs:Datatype ; owl:onDatatype xsd:decimal ;
+                                   owl:withRestrictions ( [ xsd:minInclusive "25"^^xsd:decimal ] ) ] ] ) ] .
+
+cot:ObservacionFibraOptica a owl:Class ;
+    rdfs:label "Observación de accesos por fibra óptica"@es ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf ( cot:ObservacionAccesos
+            [ a owl:Restriction ; owl:onProperty cot:usaTecnologia ; owl:someValuesFrom cot:TecnologiaFibra ] ) ] .
+
+#################################################################
+#  Clases: espectro, regulación, oferta comercial, sostenibilidad
+#################################################################
+
+cot:BandaFrecuencia a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Banda de frecuencia"@es .
+
+cot:AsignacionEspectro a owl:Class ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:label "Asignación de espectro"@es ;
+    rdfs:subClassOf
+        [ a owl:Restriction ; owl:onProperty cot:asignadoA ; owl:someValuesFrom cot:ProveedorRedesServicios ] ,
+        [ a owl:Restriction ; owl:onProperty cot:enBanda ; owl:someValuesFrom cot:BandaFrecuencia ] .
+
+cot:ActoAdministrativo a owl:Class ;
+    rdfs:subClassOf schema:Legislation ;
+    rdfs:label "Acto administrativo o norma"@es .
+
+cot:Resolucion a owl:Class ; rdfs:subClassOf cot:ActoAdministrativo ; rdfs:label "Resolución"@es .
+
+cot:PlanComercial a owl:Class ;
+    rdfs:subClassOf schema:Offer ;
+    rdfs:label "Plan comercial"@es ;
+    skos:definition "Oferta pública publicada por un operador, con precio y características, vigente en un intervalo."@es .
+
+cot:PlanPrepago  a owl:Class ; rdfs:subClassOf cot:PlanComercial ; rdfs:label "Plan prepago"@es .
+cot:PlanPospago  a owl:Class ; rdfs:subClassOf cot:PlanComercial ; rdfs:label "Plan pospago"@es .
+cot:PlanHogar    a owl:Class ; rdfs:subClassOf cot:PlanComercial ; rdfs:label "Plan hogar"@es .
+cot:PlanPrepago owl:disjointWith cot:PlanPospago .
+
+cot:IndicadorSostenibilidad a owl:Class ;
+    rdfs:subClassOf cot:Observacion ;
+    rdfs:label "Indicador de sostenibilidad (ESG)"@es ;
+    skos:definition "Valor publicado en un informe de sostenibilidad corporativo (p. ej., consumo energético, residuos electrónicos reciclados)."@es .
+
+cot:Documento a owl:Class ;
+    rdfs:subClassOf schema:CreativeWork , prov:Entity ;
+    rdfs:label "Documento público"@es .
+
+cot:InformeSostenibilidad a owl:Class ; rdfs:subClassOf cot:Documento ; rdfs:label "Informe de sostenibilidad"@es .
+
+cot:FuenteDatos a owl:Class ;
+    rdfs:subClassOf dcat:Dataset , prov:Entity ;
+    rdfs:label "Fuente de datos abiertos"@es .
+
+#################################################################
+#  Propiedades de objeto
+#################################################################
+
+cot:esSubsidiariaDe a owl:ObjectProperty ;
+    rdfs:subPropertyOf org:subOrganizationOf ;
+    rdfs:domain cot:Organizacion ; rdfs:range cot:Organizacion ;
+    rdfs:label "es subsidiaria de"@es .
+
+cot:controla a owl:ObjectProperty ;
+    owl:inverseOf cot:esSubsidiariaDe ;
+    rdfs:label "controla"@es .
+
+cot:fusionadaEn a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:domain cot:ProveedorRedesServicios ; rdfs:range cot:ProveedorRedesServicios ;
+    rdfs:label "fusionada en (absorbida por)"@es .
+
+cot:operaMarca a owl:ObjectProperty ;
+    rdfs:subPropertyOf schema:brand ;
+    rdfs:domain cot:Organizacion ; rdfs:range cot:MarcaComercial ;
+    rdfs:label "opera la marca"@es .
+
+cot:proveeServicio a owl:ObjectProperty ;
+    rdfs:domain cot:ProveedorRedesServicios ; rdfs:range cot:ServicioTelecomunicaciones ;
+    rdfs:label "provee servicio"@es .
+
+cot:reguladoPor a owl:ObjectProperty ;
+    rdfs:domain cot:ProveedorRedesServicios ; rdfs:range cot:EntidadRegulatoria ;
+    rdfs:label "regulado o vigilado por"@es .
+
+cot:regulaA a owl:ObjectProperty ; owl:inverseOf cot:reguladoPor ; rdfs:label "regula a"@es .
+
+cot:ubicadoEn a owl:ObjectProperty , owl:TransitiveProperty ;
+    rdfs:domain cot:EntidadTerritorial ; rdfs:range cot:EntidadTerritorial ;
+    rdfs:subPropertyOf geo:sfWithin ;
+    rdfs:label "ubicado en"@es .
+
+cot:perteneceADepartamento a owl:ObjectProperty , owl:FunctionalProperty ;
+    rdfs:subPropertyOf cot:ubicadoEn ;
+    rdfs:domain cot:Municipio ; rdfs:range cot:Departamento ;
+    rdfs:label "pertenece al departamento"@es .
+
+cot:reportadoPor a owl:ObjectProperty , qb:DimensionProperty ;
+    rdfs:domain cot:Observacion ; rdfs:range cot:Organizacion ;
+    rdfs:label "reportado por (proveedor)"@es .
+
+cot:enMunicipio a owl:ObjectProperty , qb:DimensionProperty ;
+    rdfs:domain cot:Observacion ; rdfs:range cot:Municipio ;
+    rdfs:label "en municipio"@es .
+
+cot:enPeriodo a owl:ObjectProperty , qb:DimensionProperty ;
+    rdfs:domain cot:Observacion ; rdfs:range cot:PeriodoReporte ;
+    rdfs:label "en periodo"@es .
+
+cot:deServicio a owl:ObjectProperty , qb:DimensionProperty ;
+    rdfs:domain cot:Observacion ; rdfs:range cot:ServicioTelecomunicaciones ;
+    rdfs:label "del servicio"@es .
+
+cot:usaTecnologia a owl:ObjectProperty , qb:DimensionProperty ;
+    rdfs:range cot:TecnologiaAcceso ;
+    rdfs:label "usa tecnología"@es .
+
+cot:enSegmento a owl:ObjectProperty , qb:DimensionProperty ;
+    rdfs:domain cot:Observacion ; rdfs:range cot:SegmentoMercado ;
+    rdfs:label "en segmento"@es .
+
+cot:midioIndicador a owl:ObjectProperty ;
+    rdfs:domain cot:ObservacionCalidad ; rdfs:range cot:IndicadorCalidad ;
+    rdfs:label "midió el indicador"@es .
+
+cot:asignadoA a owl:ObjectProperty ;
+    rdfs:domain cot:AsignacionEspectro ; rdfs:range cot:ProveedorRedesServicios ;
+    rdfs:label "asignado a"@es .
+
+cot:enBanda a owl:ObjectProperty ;
+    rdfs:domain cot:AsignacionEspectro ; rdfs:range cot:BandaFrecuencia ;
+    rdfs:label "en banda"@es .
+
+cot:otorgadaMediante a owl:ObjectProperty ;
+    rdfs:domain cot:AsignacionEspectro ; rdfs:range cot:ActoAdministrativo ;
+    rdfs:label "otorgada mediante"@es .
+
+cot:emitidoPor a owl:ObjectProperty ;
+    rdfs:domain cot:ActoAdministrativo ; rdfs:range cot:EntidadPublica ;
+    rdfs:label "emitido por"@es .
+
+cot:ofrecidoPor a owl:ObjectProperty ;
+    rdfs:subPropertyOf schema:offeredBy ;
+    rdfs:domain cot:PlanComercial ; rdfs:range cot:Organizacion ;
+    rdfs:label "ofrecido por"@es .
+
+cot:incluyeServicio a owl:ObjectProperty ;
+    rdfs:domain cot:PlanComercial ; rdfs:range cot:ServicioTelecomunicaciones ;
+    rdfs:label "incluye servicio"@es .
+
+cot:publicadoEn a owl:ObjectProperty ;
+    rdfs:range cot:Documento ;
+    rdfs:label "publicado en"@es .
+
+cot:tieneFuente a owl:ObjectProperty ;
+    rdfs:subPropertyOf prov:wasDerivedFrom ;
+    rdfs:range cot:FuenteDatos ;
+    rdfs:label "tiene fuente"@es .
+
+#################################################################
+#  Propiedades de datos
+#################################################################
+
+cot:nit a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:subPropertyOf schema:taxID ;
+    rdfs:domain cot:Organizacion ; rdfs:range xsd:string ;
+    rdfs:label "NIT"@es .
+
+cot:razonSocial a owl:DatatypeProperty ;
+    rdfs:subPropertyOf schema:legalName ;
+    rdfs:domain cot:Organizacion ; rdfs:range xsd:string ;
+    rdfs:label "razón social"@es .
+
+cot:codigoDANE a owl:DatatypeProperty , owl:FunctionalProperty ;
+    rdfs:domain cot:EntidadTerritorial ; rdfs:range xsd:string ;
+    rdfs:label "código DIVIPOLA (DANE)"@es .
+
+cot:anio a owl:DatatypeProperty ;
+    rdfs:domain cot:PeriodoReporte ; rdfs:range xsd:integer ;
+    rdfs:comment "Se usa xsd:integer y no xsd:gYear porque gYear no pertenece al mapa de tipos de datos de OWL 2 DL."@es ;
+    rdfs:label "año"@es .
+
+cot:numeroTrimestre a owl:DatatypeProperty ;
+    rdfs:domain cot:Trimestre ;
+    rdfs:range [ a rdfs:Datatype ; owl:onDatatype xsd:integer ;
+                 owl:withRestrictions ( [ xsd:minInclusive 1 ] [ xsd:maxInclusive 4 ] ) ] ;
+    rdfs:label "número de trimestre"@es .
+
+cot:numeroAccesos a owl:DatatypeProperty , qb:MeasureProperty ;
+    rdfs:domain cot:ObservacionAccesos ; rdfs:range xsd:nonNegativeInteger ;
+    rdfs:label "número de accesos"@es .
+
+cot:velocidadBajadaMbps a owl:DatatypeProperty ;
+    rdfs:domain cot:ObservacionAccesos ; rdfs:range xsd:decimal ;
+    rdfs:label "velocidad de bajada (Mbps)"@es .
+
+cot:numeroRegistrosFuente a owl:DatatypeProperty ;
+    rdfs:domain cot:Observacion ; rdfs:range xsd:nonNegativeInteger ;
+    rdfs:label "número de registros fuente agregados"@es ;
+    rdfs:comment "Filas de la fuente original que se agregaron en esta observación (trazabilidad)."@es .
+
+cot:velocidadSubidaMbps a owl:DatatypeProperty ;
+    rdfs:domain cot:ObservacionAccesos ; rdfs:range xsd:decimal ;
+    rdfs:label "velocidad de subida (Mbps)"@es .
+
+cot:valorMedido a owl:DatatypeProperty ;
+    rdfs:domain cot:Observacion ; rdfs:range xsd:decimal ;
+    rdfs:label "valor medido"@es .
+
+cot:unidadMedida a owl:DatatypeProperty ;
+    rdfs:range xsd:string ;
+    rdfs:label "unidad de medida"@es .
+
+cot:anchoBandaMHz a owl:DatatypeProperty ;
+    rdfs:domain cot:AsignacionEspectro ; rdfs:range xsd:decimal ;
+    rdfs:label "ancho de banda asignado (MHz)"@es .
+
+cot:frecuenciaInicialMHz a owl:DatatypeProperty ;
+    rdfs:domain cot:BandaFrecuencia ; rdfs:range xsd:decimal ;
+    rdfs:label "frecuencia inicial (MHz)"@es .
+
+cot:frecuenciaFinalMHz a owl:DatatypeProperty ;
+    rdfs:domain cot:BandaFrecuencia ; rdfs:range xsd:decimal ;
+    rdfs:label "frecuencia final (MHz)"@es .
+
+cot:fechaInicioVigencia a owl:DatatypeProperty ; rdfs:range xsd:dateTime ; rdfs:label "fecha de inicio de vigencia"@es .
+cot:fechaFinVigencia    a owl:DatatypeProperty ; rdfs:range xsd:dateTime ; rdfs:label "fecha de fin de vigencia"@es .
+
+cot:precioMensualCOP a owl:DatatypeProperty ;
+    rdfs:domain cot:PlanComercial ; rdfs:range xsd:decimal ;
+    rdfs:label "precio mensual (COP)"@es .
+
+cot:capacidadDatosGB a owl:DatatypeProperty ;
+    rdfs:domain cot:PlanComercial ; rdfs:range xsd:decimal ;
+    rdfs:label "capacidad de datos (GB)"@es .
+
+cot:fechaFusion a owl:DatatypeProperty ;
+    rdfs:domain cot:ProveedorRedesServicios ; rdfs:range xsd:dateTime ;
+    rdfs:label "fecha de fusión"@es .
+
+#################################################################
+#  Esquemas de conceptos (vocabularios controlados)
+#################################################################
+
+cot:esquema-tecnologias a skos:ConceptScheme ; skos:prefLabel "Tecnologías de acceso"@es .
+cot:esquema-segmentos   a skos:ConceptScheme ; skos:prefLabel "Segmentos de mercado"@es .
+
+## Familias (conceptos amplios). skos:altLabel guarda el valor literal que publica MinTIC.
+cot:tec-familia-fibra a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:topConceptOf cot:esquema-tecnologias ;
+    skos:prefLabel "Fibra óptica (familia)"@es .
+cot:tec-familia-coaxial a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:topConceptOf cot:esquema-tecnologias ;
+    skos:prefLabel "Cable coaxial (familia)"@es .
+cot:tec-familia-cobre a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:topConceptOf cot:esquema-tecnologias ;
+    skos:prefLabel "Par de cobre (familia)"@es .
+cot:tec-familia-inalambrica a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:topConceptOf cot:esquema-tecnologias ;
+    skos:prefLabel "Inalámbrica fija (familia)"@es .
+cot:tec-familia-satelital a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:topConceptOf cot:esquema-tecnologias ;
+    skos:prefLabel "Satelital (familia)"@es .
+cot:tec-familia-movil a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:topConceptOf cot:esquema-tecnologias ;
+    skos:prefLabel "Móvil (familia)"@es .
+cot:tec-familia-otra a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:topConceptOf cot:esquema-tecnologias ;
+    skos:prefLabel "Otras / no aplica (familia)"@es .
+
+## Clase para tecnologías basadas en fibra: permite inferir cot:ObservacionFibraOptica.
+cot:TecnologiaFibra a owl:Class ; rdfs:subClassOf cot:TecnologiaAcceso ; rdfs:label "Tecnología basada en fibra"@es .
+
+cot:tec-ftth a cot:TecnologiaFibra ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-fibra ;
+    skos:prefLabel "FTTH"@es ; skos:altLabel "FIBER TO THE HOME (FTTH)" .
+cot:tec-fttp a cot:TecnologiaFibra ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-fibra ;
+    skos:prefLabel "FTTP"@es ; skos:altLabel "FIBER TO THE PREMISES" .
+cot:tec-fttb a cot:TecnologiaFibra ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-fibra ;
+    skos:prefLabel "FTTB"@es ; skos:altLabel "FIBER TO THE BUILDING O FIBER TO THE BASEMENT (FTTB)" .
+cot:tec-fttc a cot:TecnologiaFibra ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-fibra ;
+    skos:prefLabel "FTTC"@es ; skos:altLabel "FIBER TO THE CABINET (FTTC)" .
+cot:tec-fttn a cot:TecnologiaFibra ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-fibra ;
+    skos:prefLabel "FTTN"@es ; skos:altLabel "FIBER TO THE NODE (FTTN)" .
+cot:tec-ftta a cot:TecnologiaFibra ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-fibra ;
+    skos:prefLabel "FTTA"@es ; skos:altLabel "FIBER TO THE ANTENNA (FTTA)" .
+cot:tec-fibra-otras a cot:TecnologiaFibra ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-fibra ;
+    skos:prefLabel "Otras tecnologías de fibra (FTTx)"@es ; skos:altLabel "OTRAS TECNOLOGÍAS DE FIBRA (ANTES FTTX)" .
+cot:tec-cable a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-coaxial ;
+    skos:prefLabel "Cable"@es ; skos:altLabel "CABLE" .
+cot:tec-hfc a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-coaxial ;
+    skos:prefLabel "HFC"@es ; skos:altLabel "HYBRID FIBER COAXIAL (HFC)" .
+cot:tec-xdsl a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-cobre ;
+    skos:prefLabel "xDSL"@es ; skos:altLabel "XDSL" .
+cot:tec-wifi a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-inalambrica ;
+    skos:prefLabel "WiFi"@es ; skos:altLabel "WIFI" .
+cot:tec-wimax a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-inalambrica ;
+    skos:prefLabel "WiMAX"@es ; skos:altLabel "WIMAX" .
+cot:tec-inalambrica-otras a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-inalambrica ;
+    skos:prefLabel "Otras inalámbricas"@es ; skos:altLabel "OTRAS TECNOLOGÍAS INALÁMBRICAS" .
+cot:tec-satelital a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-satelital ;
+    skos:prefLabel "Satelital"@es ; skos:altLabel "SATELITAL" .
+cot:tec-fijas-otras a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-otra ;
+    skos:prefLabel "Otras tecnologías fijas"@es ; skos:altLabel "OTRAS TECNOLOGÍAS FIJAS" .
+cot:tec-no-aplica a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-otra ;
+    skos:prefLabel "No aplica"@es ; skos:altLabel "NA (NO APLICA)" .
+cot:tec-4g a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-movil ; skos:prefLabel "4G (LTE)"@es .
+cot:tec-5g a cot:TecnologiaAcceso ; skos:inScheme cot:esquema-tecnologias ; skos:broader cot:tec-familia-movil ; skos:prefLabel "5G (NR)"@es .
+
+cot:seg-corporativo a cot:SegmentoMercado ; skos:inScheme cot:esquema-segmentos ; skos:prefLabel "Corporativo"@es .
+cot:seg-residencial a cot:SegmentoMercado ; skos:inScheme cot:esquema-segmentos ; skos:prefLabel "Residencial"@es .
+cot:seg-estrato-1 a cot:SegmentoMercado ; skos:inScheme cot:esquema-segmentos ; skos:broader cot:seg-residencial ; skos:prefLabel "Residencial estrato 1"@es .
+cot:seg-estrato-2 a cot:SegmentoMercado ; skos:inScheme cot:esquema-segmentos ; skos:broader cot:seg-residencial ; skos:prefLabel "Residencial estrato 2"@es .
+cot:seg-estrato-3 a cot:SegmentoMercado ; skos:inScheme cot:esquema-segmentos ; skos:broader cot:seg-residencial ; skos:prefLabel "Residencial estrato 3"@es .
+cot:seg-estrato-4 a cot:SegmentoMercado ; skos:inScheme cot:esquema-segmentos ; skos:broader cot:seg-residencial ; skos:prefLabel "Residencial estrato 4"@es .
+cot:seg-estrato-5 a cot:SegmentoMercado ; skos:inScheme cot:esquema-segmentos ; skos:broader cot:seg-residencial ; skos:prefLabel "Residencial estrato 5"@es .
+cot:seg-estrato-6 a cot:SegmentoMercado ; skos:inScheme cot:esquema-segmentos ; skos:broader cot:seg-residencial ; skos:prefLabel "Residencial estrato 6"@es .
+cot:seg-sin-estratificar a cot:SegmentoMercado ; skos:inScheme cot:esquema-segmentos ; skos:prefLabel "Sin estratificar"@es .
+cot:seg-uso-propio a cot:SegmentoMercado ; skos:inScheme cot:esquema-segmentos ; skos:prefLabel "Uso propio interno del operador"@es .

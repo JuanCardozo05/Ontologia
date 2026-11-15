@@ -1,0 +1,19 @@
+﻿PREFIX cot:  <https://w3id.org/cotel/ontology#>
+PREFIX res:  <https://w3id.org/cotel/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+# CQ4. ¿En qué municipios con más de 2.000 accesos de Internet fijo no reporta accesos Claro? (oportunidad de expansión)
+SELECT ?municipio ?departamento ?accesosMercado ?proveedores
+WHERE {
+  {
+    SELECT ?m (SUM(?n) AS ?accesosMercado) (COUNT(DISTINCT ?p) AS ?proveedores)
+    WHERE { ?obs cot:enMunicipio ?m ; cot:reportadoPor ?p ; cot:numeroAccesos ?n . }
+    GROUP BY ?m
+    HAVING (SUM(?n) > 2000)
+  }
+  MINUS { ?o2 cot:enMunicipio ?m ; cot:reportadoPor res:org-comcel ; cot:numeroAccesos ?n2 . FILTER (?n2 > 0) }
+  ?m rdfs:label ?municipio ; cot:perteneceADepartamento/rdfs:label ?departamento .
+}
+ORDER BY DESC(?accesosMercado)
+LIMIT 20

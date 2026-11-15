@@ -1,0 +1,13 @@
+﻿PREFIX cot:  <https://w3id.org/cotel/ontology#>
+PREFIX res:  <https://w3id.org/cotel/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+# CQ3. ¿Cómo se distribuyen los accesos de Claro por familia tecnológica? (usa la jerarquía SKOS)
+SELECT ?familia (SUM(?n) AS ?accesos)
+WHERE {
+  ?obs a cot:ObservacionAccesos ; cot:reportadoPor res:org-comcel ; cot:numeroAccesos ?n ;
+       cot:usaTecnologia/skos:broader/skos:prefLabel ?familia .
+}
+GROUP BY ?familia
+ORDER BY DESC(?accesos)

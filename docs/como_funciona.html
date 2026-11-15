@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>COTEL – Cómo funciona</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm 18mm 16mm;
+    @bottom-right { content: "COTEL · " counter(page); font: 8pt "Segoe UI", sans-serif; color: #888; }
+  }
+  @page :first { margin: 0; @bottom-right { content: none; } }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", Arial, sans-serif; font-size: 10pt; line-height: 1.45; color: #22252b; margin: 0; }
+  h1 { font-size: 19pt; color: #DA291C; margin: 0 0 4mm; padding-bottom: 2mm; border-bottom: 2px solid #DA291C;
+       break-before: page; }
+  h1 .num { color: #22252b; font-weight: 300; margin-right: 6px; }
+  h2 { font-size: 12.5pt; color: #2B2D33; margin: 6mm 0 2mm; }
+  h3 { font-size: 10.5pt; margin: 4mm 0 1.5mm; color: #444; }
+  p { margin: 0 0 2.5mm; text-align: justify; }
+  ul, ol { margin: 0 0 3mm; padding-left: 6mm; }
+  li { margin-bottom: 1mm; }
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 4mm; font-size: 8.8pt; break-inside: avoid; }
+  th { background: #2B2D33; color: #fff; text-align: left; padding: 1.6mm 2mm; font-weight: 600; }
+  td { border-bottom: 1px solid #e2e2e2; padding: 1.4mm 2mm; vertical-align: top; }
+  tr:nth-child(even) td { background: #fafafa; }
+  code, pre { font-family: Consolas, "Cascadia Mono", monospace; font-size: 8.3pt; }
+  code { background: #f3f3f5; padding: 0 3px; border-radius: 3px; }
+  pre { background: #1f2329; color: #e8e8e8; padding: 3mm 4mm; border-radius: 4px; white-space: pre-wrap;
+        margin: 1mm 0 4mm; break-inside: avoid; line-height: 1.35; }
+  pre .c { color: #8fbf7f; } pre .k { color: #ff9d8a; } pre .s { color: #f2cf7b; }
+  img { max-width: 100%; display: block; margin: 2mm auto 1mm; }
+  figure { margin: 2mm 0 4mm; break-inside: avoid; }
+  figcaption { font-size: 8pt; color: #666; text-align: center; }
+  .caja { border-left: 4px solid #DA291C; background: #fdf1f0; padding: 3mm 4mm; margin: 3mm 0 4mm; break-inside: avoid; }
+  .caja.azul { border-color: #1F5FA8; background: #eef3fa; }
+  .caja.verde { border-color: #2E7D32; background: #edf6ee; }
+  .caja.gris { border-color: #888; background: #f4f4f4; }
+  .caja p:last-child, .caja ul:last-child { margin-bottom: 0; }
+  .kpis { display: flex; gap: 3mm; margin: 3mm 0 4mm; flex-wrap: wrap; }
+  .kpi { flex: 1 1 0; min-width: 30mm; border: 1px solid #e3e3e3; border-top: 3px solid #DA291C; padding: 2.5mm 3mm; border-radius: 3px; }
+  .kpi b { display: block; font-size: 15pt; color: #DA291C; line-height: 1.1; }
+  .kpi span { font-size: 8pt; color: #555; }
+  .dos { display: flex; gap: 5mm; align-items: flex-start; }
+  .dos > * { flex: 1 1 0; }
+  .flujo { display: flex; align-items: stretch; gap: 1.5mm; margin: 3mm 0 4mm; break-inside: avoid; }
+  .paso { flex: 1 1 0; border: 1px solid #ccc; border-radius: 4px; padding: 2mm; font-size: 8pt; background: #fff; }
+  .paso b { display: block; color: #fff; background: #DA291C; margin: -2mm -2mm 1.5mm; padding: 1.2mm 2mm; border-radius: 3px 3px 0 0; font-size: 8.5pt; }
+  .paso.f b { background: #1F5FA8; } .paso.p b { background: #2E7D32; }
+  .flecha { align-self: center; color: #999; font-size: 14pt; }
+  .tag { display: inline-block; font-size: 7.5pt; padding: 0 5px; border-radius: 8px; color: #fff; background: #2E7D32; }
+  .tag.pend { background: #B26A00; } .tag.f2 { background: #888; }
+  .portada { height: 297mm; display: flex; flex-direction: column; color: #fff;
+             background: linear-gradient(160deg, #DA291C 0%, #9e1a10 62%, #2B2D33 62.2%, #2B2D33 100%); padding: 28mm 22mm; }
+  .portada .sup { font-size: 10pt; letter-spacing: 2px; text-transform: uppercase; opacity: .85; }
+  .portada h0 { display: block; font-size: 52pt; font-weight: 800; margin: 14mm 0 2mm; letter-spacing: 2px; }
+  .portada .sub { font-size: 17pt; font-weight: 300; max-width: 150mm; line-height: 1.3; }
+  .portada .lema { margin-top: 10mm; font-size: 11pt; max-width: 145mm; opacity: .95; }
+  .portada .pie { margin-top: auto; font-size: 9.5pt; line-height: 1.6; }
+  .portada .pie b { color: #ffb3aa; }
+  .indice { columns: 2; column-gap: 10mm; font-size: 10pt; }
+  .indice div { margin-bottom: 1.6mm; break-inside: avoid; }
+  .indice span { color: #DA291C; font-weight: 700; display: inline-block; width: 7mm; }
+  .peq { font-size: 8.3pt; color: #555; }
+  .evitar { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<!-- ======================== PORTADA ======================== -->
+<section class="portada">
+  <div class="sup">Proyecto de grado · Web semántica aplicada · Claro Colombia</div>
+  <h0>COTEL</h0>
+  <div class="sub">Ontología y grafo de conocimiento de datos públicos del sector de telecomunicaciones en Colombia</div>
+  <div class="lema">Documento explicativo: cómo funciona la idea, qué se construyó, cómo se validó, qué resultados entrega
+    y cómo convertirlo en tu monografía o artículo.</div>
+  <div class="pie">
+    <b>Estado:</b> prototipo funcional ejecutado de punta a punta con datos reales de MinTIC (corte 2023-T3)<br>
+    <b>Datos:</b> exclusivamente información pública — sin datos de clientes ni información interna<br>
+    <b>Fecha:</b> noviembre de 2026
+  </div>
+</section>
+
+<!-- ======================== ÍNDICE ======================== -->
+<h1 style="break-before: auto; margin-top: 0">Contenido</h1>
+<div class="indice">
+  <div><span>1</span>La idea en una página</div>
+  <div><span>2</span>Web semántica explicada sin tecnicismos</div>
+  <div><span>3</span>Cómo funciona: arquitectura y flujo</div>
+  <div><span>4</span>La ontología COTEL</div>
+  <div><span>5</span>De un dato crudo a conocimiento (ejemplo real)</div>
+  <div><span>6</span>Validación y calidad</div>
+  <div><span>7</span>Resultados: preguntas de negocio respondidas</div>
+  <div><span>8</span>Hallazgos sobre la calidad de los datos públicos</div>
+  <div><span>9</span>Valor para Claro</div>
+  <div><span>10</span>Cómo convertirlo en tu proyecto de grado</div>
+  <div><span>11</span>Qué se entregó y cómo ejecutarlo</div>
+  <div><span>12</span>Limitaciones, pendientes y siguientes pasos</div>
+  <div><span>A</span>Glosario</div>
+</div>
+
+<div class="caja gris" style="margin-top:8mm">
+  <p><b>Cómo leer este documento.</b> Las secciones 1 a 3 explican la idea para cualquier lector (tu jefe, tu director de
+  tesis). Las secciones 4 a 6 detallan la parte técnica que debes dominar para sustentar. Las secciones 7 a 9 muestran
+  los resultados y el valor para la empresa. Las secciones 10 a 12 te dicen qué hacer con todo esto.</p>
+</div>
+
+<!-- ======================== 1 ======================== -->
+<h1><span class="num">1</span>La idea en una página</h1>
+
+<div class="caja">
+  <p><b>En una frase:</b> convertir los datos públicos dispersos del sector TIC colombiano en un <b>grafo de conocimiento</b>
+  que “entiende” qué es un operador, un municipio, una tecnología o un estrato, para responder preguntas de negocio de
+  Claro de forma <b>correcta, trazable y rápida</b>.</p>
+</div>
+
+<h2>El problema</h2>
+<p>MinTIC, la CRC, la ANE y la SIC publican muchísima información del mercado, pero cada fuente usa formatos, códigos y
+nombres distintos. Claro aparece como <code>COMUNICACION CELULAR S A COMCEL S A</code>; su operación fija histórica como
+<code>TELMEX COLOMBIA S.A.</code>; las tecnologías son texto libre (<i>“FIBER TO THE HOME (FTTH)”</i>, <i>“OTRAS
+TECNOLOGÍAS DE FIBRA (ANTES FTTX)”</i>). Responder <i>“¿en qué municipios hay demanda y Claro no está?”</i> exige descargar,
+limpiar y cruzar archivos en Excel cada vez, sin rastro de dónde salió cada cifra.</p>
+
+<h2>La solución</h2>
+<ul>
+  <li><b>Una ontología (COTEL)</b>: el “diccionario formal” del mercado de telecomunicaciones, escrito en OWL 2 y basado en
+  estándares del W3C. Define qué cosas existen (operadores, municipios, tecnologías…) y cómo se relacionan.</li>
+  <li><b>Un pipeline automático</b> que descarga los datos de MinTIC y los convierte en un grafo que sigue esa ontología.</li>
+  <li><b>Validación automática</b> de la calidad de los datos (SHACL) y de la lógica del modelo (razonadores).</li>
+  <li><b>Preguntas de negocio en SPARQL</b> que cualquier analista puede volver a ejecutar en segundos.</li>
+</ul>
+
+<h2>Lo que ya funciona</h2>
+<div class="kpis">
+  <div class="kpi"><b>208.803</b><span>registros públicos de MinTIC procesados</span></div>
+  <div class="kpi"><b>311.800</b><span>tripletas en el grafo de conocimiento</span></div>
+  <div class="kpi"><b>0</b><span>violaciones de calidad (SHACL)</span></div>
+  <div class="kpi"><b>8/8</b><span>preguntas de negocio respondidas</span></div>
+</div>
+<div class="kpis">
+  <div class="kpi"><b>36,24 %</b><span>participación de Claro en internet fijo</span></div>
+  <div class="kpi"><b>79,6 %</b><span>de la competencia en Bogotá ya es fibra</span></div>
+  <div class="kpi"><b>Consistente</b><span>verificado con el razonador HermiT</span></div>
+  <div class="kpi"><b>100 %</b><span>cuadre del total contra la fuente</span></div>
+</div>
+
+<h2>¿Para quién en Claro?</h2>
+<p><b>Asuntos Regulatorios</b> (cifras trazables ante CRC/MinTIC), <b>Inteligencia de Mercado</b> (benchmark por municipio,
+tecnología y estrato) y <b>Planeación Comercial / Expansión</b> (dónde hay demanda sin presencia de Claro y dónde la
+competencia ya despliega fibra).</p>
+
+<!-- ======================== 2 ======================== -->
+<h1><span class="num">2</span>Web semántica explicada sin tecnicismos</h1>
+
+<h2>De la hoja de cálculo al grafo</h2>
+<p>En Excel, el significado de cada columna vive en la cabeza de quien hizo el archivo. En la web semántica, el significado
+se escribe explícitamente para que una máquina lo entienda. Todo se expresa como <b>tripletas</b>: <i>sujeto – predicado –
+objeto</i>, es decir, frases simples que se pueden encadenar.</p>
+
+<table>
+  <tr><th>Sujeto</th><th>Predicado (relación)</th><th>Objeto</th></tr>
+  <tr><td>Comcel</td><td>es subsidiaria de</td><td>América Móvil</td></tr>
+  <tr><td>Comcel</td><td>opera la marca</td><td>Claro</td></tr>
+  <tr><td>Bogotá</td><td>pertenece al departamento</td><td>Bogotá D.C.</td></tr>
+  <tr><td>Observación X</td><td>reportada por</td><td>Comcel</td></tr>
+  <tr><td>Observación X</td><td>número de accesos</td><td>338.204</td></tr>
+</table>
+<p>Al unir miles de tripletas se forma un <b>grafo de conocimiento</b>. Cada cosa tiene un identificador único global (una
+IRI, p. ej. <code>https://w3id.org/cotel/resource/org-comcel</code>), así que distintas fuentes pueden hablar de la misma
+entidad sin ambigüedad.</p>
+
+<h2>Las piezas tecnológicas y para qué las uso</h2>
+<table>
+  <tr><th style="width:17%">Tecnología</th><th style="width:38%">Qué es</th><th>Para qué se usa en COTEL</th></tr>
+  <tr><td><b>RDF / Turtle</b></td><td>Modelo de datos de tripletas y su formato de texto.</td><td>Formato del grafo y de la ontología (<code>.ttl</code>).</td></tr>
+  <tr><td><b>Ontología (OWL 2)</b></td><td>Esquema formal: clases, relaciones, reglas lógicas.</td><td>Define el mercado TIC: operadores, observaciones, territorio, tecnologías, regulación.</td></tr>
+  <tr><td><b>SKOS</b></td><td>Estándar para taxonomías y vocabularios controlados.</td><td>Jerarquía de tecnologías (FTTH → fibra) y segmentos (estratos 1-6, corporativo).</td></tr>
+  <tr><td><b>SHACL</b></td><td>Reglas de validación de datos (“formas”).</td><td>Control de calidad: accesos no negativos, códigos DANE válidos, velocidades plausibles.</td></tr>
+  <tr><td><b>Razonador</b></td><td>Programa que deduce hechos nuevos a partir de las reglas.</td><td>Clasifica observaciones de fibra, deduce que un municipio está en Colombia, verifica consistencia.</td></tr>
+  <tr><td><b>SPARQL</b></td><td>El “SQL” de los grafos.</td><td>Las 8 preguntas de negocio (CQ1-CQ8).</td></tr>
+  <tr><td><b>Triplestore</b></td><td>Base de datos de grafos con punto de consulta web.</td><td>Producto final: Apache Jena Fuseki o GraphDB.</td></tr>
+</table>
+
+<h2>Dos ideas clave que debes saber explicar</h2>
+<div class="dos">
+  <div class="caja azul"><p><b>OWL razona (mundo abierto).</b> Si algo no está en el grafo, OWL no asume que es falso,
+  solo que no se sabe. Sirve para <i>deducir</i>: si una observación usa FTTH y FTTH es fibra, entonces es una
+  observación de fibra.</p></div>
+  <div class="caja verde"><p><b>SHACL valida (mundo cerrado).</b> Si falta un dato obligatorio, es un error. Sirve para
+  <i>controlar calidad</i>: toda observación debe tener proveedor, municipio, periodo y un número de accesos ≥ 0.</p></div>
+</div>
+<p>COTEL usa las dos a propósito: OWL para inferir conocimiento y SHACL para garantizar la calidad. Esta separación es una
+buena práctica reconocida y un punto fuerte para la sustentación.</p>
+
+<h2>¿Por qué no simplemente una base de datos SQL?</h2>
+<ul>
+  <li><b>Integración:</b> agregar una nueva fuente (ANE, SIC) no exige rediseñar tablas; se agregan tripletas que reutilizan las mismas entidades.</li>
+  <li><b>Significado compartido:</b> la ontología reutiliza estándares internacionales (W3C), entendibles por otras herramientas y organizaciones.</li>
+  <li><b>Inferencia:</b> parte del conocimiento se deduce automáticamente en lugar de programarse.</li>
+  <li><b>Trazabilidad:</b> cada cifra apunta a su fuente oficial (PROV-O, DCAT).</li>
+</ul>
+
+<!-- ======================== 3 ======================== -->
+<h1><span class="num">3</span>Cómo funciona: arquitectura y flujo</h1>
+
+<div class="flujo">
+  <div class="paso f"><b>Fuentes</b>MinTIC (datos.gov.co, API Socrata).<br>Fase 2: CRC, ANE, SIC, informes de Claro.</div>
+  <div class="flecha">➜</div>
+  <div class="paso"><b>01 · Descargar</b>Descarga paginada del corte trimestral. Guarda el CSV crudo con fecha.</div>
+  <div class="flecha">➜</div>
+  <div class="paso"><b>02 · Transformar</b>Normaliza, agrega y convierte a RDF siguiendo la ontología.</div>
+  <div class="flecha">➜</div>
+  <div class="paso"><b>03 · Validar y razonar</b>SHACL (calidad) + OWL 2 RL (inferencias).</div>
+  <div class="flecha">➜</div>
+  <div class="paso"><b>04 · Verificar DL</b>HermiT comprueba la consistencia lógica.</div>
+  <div class="flecha">➜</div>
+  <div class="paso p"><b>Producto</b>Consultas SPARQL, CSV de resultados, triplestore y tablero.</div>
+</div>
+
+<p>La <b>ontología</b> (<code>cotel.ttl</code>) está en el centro: el ETL la lee para saber cómo mapear tecnologías y
+segmentos, el validador la usa junto con las formas SHACL y el razonador deduce hechos a partir de sus axiomas.</p>
+
+<h2>Paso a paso</h2>
+<table>
+  <tr><th style="width:20%">Paso / script</th><th>Qué hace</th><th style="width:22%">Resultado</th><th style="width:10%">Tiempo</th></tr>
+  <tr><td><code>01_descargar.py</code></td><td>Consulta la API Socrata del dataset <code>n48w-gutb</code> por año y trimestre, en páginas de 50.000 filas.</td><td>208.803 filas crudas (2023-T3)</td><td>≈ 1 min</td></tr>
+  <tr><td><code>02_transformar_rdf.py</code></td><td>Normaliza textos (tildes, mayúsculas), convierte comas decimales, completa códigos DANE, mapea tecnologías con la ontología, agrega por periodo-proveedor-municipio-tecnología-segmento y calcula velocidades ponderadas por accesos. Genera IRIs estables y procedencia.</td><td>23.317 observaciones, 1.010 proveedores, 1.117 municipios, ≈ 311.800 tripletas</td><td>≈ 1 min</td></tr>
+  <tr><td><code>test_pipeline.py</code></td><td>Pruebas unitarias: cobertura de tecnologías y segmentos, conversión de decimales, casos válidos e inválidos de SHACL.</td><td>15/15 aprobadas</td><td>2 s</td></tr>
+  <tr><td><code>03_validar_razonar_consultar.py</code></td><td>Valida todo el grafo con SHACL por lotes; razona con OWL 2 RL sobre una muestra (Bogotá); ejecuta las 8 consultas y guarda CSV.</td><td>Reporte SHACL, <code>resumen.json</code>, CQ1-CQ8 en CSV</td><td>≈ 12 min</td></tr>
+  <tr><td><code>04_verificar_owl_dl.py</code></td><td>Carga ontología + base curada + muestra en HermiT (OWL 2 DL completo).</td><td>Consistencia y clases insatisfacibles</td><td>≈ 16 s</td></tr>
+</table>
+
+<h2>Componentes del grafo</h2>
+<table>
+  <tr><th>Archivo</th><th>Contenido</th><th>Origen</th></tr>
+  <tr><td><code>ontologia/cotel.ttl</code></td><td>Clases, propiedades, axiomas y taxonomías SKOS (el esquema).</td><td>Diseñado en el proyecto</td></tr>
+  <tr><td><code>datos/base_curada.ttl</code></td><td>País, América Móvil, Comcel, Telmex, marca Claro, MinTIC, CRC, ANE, SIC y 4 fuentes DCAT.</td><td>Información pública curada manualmente</td></tr>
+  <tr><td><code>datos/cotel_internet_fijo_2023T3.ttl</code></td><td>Observaciones de accesos, proveedores, municipios, departamentos.</td><td>Generado por el ETL</td></tr>
+  <tr><td><code>ontologia/cotel-shapes.ttl</code></td><td>6 formas SHACL de calidad.</td><td>Diseñado en el proyecto</td></tr>
+</table>
+
+<!-- ======================== 4 ======================== -->
+<h1><span class="num">4</span>La ontología COTEL</h1>
+
+<div class="kpis">
+  <div class="kpi"><b>41</b><span>clases propias</span></div>
+  <div class="kpi"><b>24 / 19</b><span>propiedades de objeto / de datos</span></div>
+  <div class="kpi"><b>35</b><span>conceptos SKOS (25 tecnologías, 10 segmentos)</span></div>
+  <div class="kpi"><b>580</b><span>tripletas de axiomas</span></div>
+  <div class="kpi"><b>OWL 2 DL</b><span>perfil verificado</span></div>
+</div>
+<p class="peq">Espacio de nombres: <code>https://w3id.org/cotel/ontology#</code> (prefijo <code>cot:</code>). Recursos:
+<code>https://w3id.org/cotel/resource/</code> (prefijo <code>res:</code>).</p>
+
+<figure>
+  <img src="img/ontologia.png" style="width: 100%">
+  <figcaption>Figura 1. Modelo conceptual simplificado de COTEL (clases principales y relaciones).</figcaption>
+</figure>
+
+<h2>Vocabularios estándar reutilizados</h2>
+<p>Una buena ontología no reinventa: reutiliza. Esto aumenta la interoperabilidad y es un criterio de evaluación (FAIR).</p>
+<table>
+  <tr><th style="width:22%">Vocabulario</th><th style="width:16%">Organismo</th><th>Uso en COTEL</th></tr>
+  <tr><td>ORG (Organization Ontology)</td><td>W3C</td><td>Operadores, grupo empresarial, subsidiarias.</td></tr>
+  <tr><td>schema.org</td><td>Schema.org</td><td>Marca comercial, nombres legales.</td></tr>
+  <tr><td>RDF Data Cube (qb)</td><td>W3C</td><td>Patrón de observaciones estadísticas con dimensiones y medidas.</td></tr>
+  <tr><td>SKOS</td><td>W3C</td><td>Taxonomías de tecnología y segmento.</td></tr>
+  <tr><td>OWL-Time</td><td>W3C</td><td>Trimestres como intervalos de tiempo.</td></tr>
+  <tr><td>GeoSPARQL</td><td>OGC</td><td>Municipios, departamentos y país como entidades geográficas.</td></tr>
+  <tr><td>DCAT / DCT</td><td>W3C / DCMI</td><td>Catálogo de fuentes y metadatos.</td></tr>
+  <tr><td>PROV-O</td><td>W3C</td><td>Procedencia: de qué dataset proviene cada observación.</td></tr>
+</table>
+
+<h2>Módulos</h2>
+<table>
+  <tr><th style="width:20%">Módulo</th><th>Clases principales</th><th style="width:17%">Estado</th></tr>
+  <tr><td>Organizaciones</td><td>GrupoEmpresarial, ProveedorRedesServicios, EntidadRegulatoria, MarcaComercial</td><td><span class="tag">poblado</span></td></tr>
+  <tr><td>Mercado</td><td>ObservacionAccesos, ObservacionFibraOptica, ObservacionAltaVelocidad, ServicioTelecomunicaciones</td><td><span class="tag">poblado</span></td></tr>
+  <tr><td>Territorio</td><td>EntidadTerritorial, Municipio, Departamento, Pais</td><td><span class="tag">poblado</span></td></tr>
+  <tr><td>Tiempo y fuentes</td><td>PeriodoReporte, Trimestre, FuenteDatos</td><td><span class="tag">poblado</span></td></tr>
+  <tr><td>Tecnología y segmento</td><td>TecnologiaAcceso, TecnologiaFibra, SegmentoMercado (SKOS)</td><td><span class="tag">poblado</span></td></tr>
+  <tr><td>Espectro</td><td>AsignacionEspectro, BandaFrecuencia</td><td><span class="tag f2">modelado · fase 2</span></td></tr>
+  <tr><td>Regulación</td><td>Resolucion, ActoAdministrativo</td><td><span class="tag f2">modelado · fase 2</span></td></tr>
+  <tr><td>Calidad, PQR, oferta y ESG</td><td>ObservacionCalidad, ObservacionPQR, PlanComercial (Hogar, Pospago, Prepago), IndicadorSostenibilidad</td><td><span class="tag f2">modelado · fase 2</span></td></tr>
+</table>
+
+<h2>Axiomas que hacen “inteligente” a la ontología</h2>
+<table>
+  <tr><th style="width:30%">Axioma</th><th>Significado</th><th style="width:26%">Efecto</th></tr>
+  <tr><td><code>ObservacionFibraOptica ≡ ObservacionAccesos ⊓ ∃usaTecnologia.TecnologiaFibra</code></td><td>Una observación de fibra es, por definición, cualquier observación cuya tecnología sea de fibra.</td><td>El razonador las clasifica solo; no hay que programarlo.</td></tr>
+  <tr><td><code>ObservacionAltaVelocidad</code> (velocidad ≥ 25 Mbps)</td><td>Clase definida con una restricción numérica.</td><td>HermiT la infiere; en OWL RL se materializa con una regla SPARQL.</td></tr>
+  <tr><td><code>ubicadoEn</code> transitiva</td><td>Si el municipio está en el departamento y este en Colombia, el municipio está en Colombia.</td><td>Consultas geográficas a cualquier nivel.</td></tr>
+  <tr><td><code>perteneceADepartamento</code> funcional</td><td>Un municipio pertenece a un único departamento.</td><td>Detecta errores de codificación.</td></tr>
+  <tr><td><code>controla</code> inversa de <code>esSubsidiariaDe</code></td><td>Si Comcel es subsidiaria de América Móvil, América Móvil controla a Comcel.</td><td>Se escribe una vez y se consulta en ambos sentidos.</td></tr>
+  <tr><td><code>fusionadaEn</code></td><td>Telmex Colombia fue absorbida por Comcel.</td><td>Unifica series históricas de distintas razones sociales.</td></tr>
+</table>
+
+<h2>Decisiones de diseño (para defender en la sustentación)</h2>
+<ol>
+  <li><b>Observaciones como entidades (patrón Data Cube):</b> cada combinación periodo × proveedor × municipio × tecnología × segmento es un nodo, lo que permite series de tiempo y múltiples dimensiones sin reificación.</li>
+  <li><b>La ontología dirige el ETL:</b> cada concepto de tecnología guarda el texto exacto de MinTIC en <code>skos:altLabel</code>; el código no tiene listas fijas, las lee de la ontología.</li>
+  <li><b>Separación OWL / SHACL:</b> inferir y validar son responsabilidades distintas.</li>
+  <li><b>IRIs persistentes:</b> espacio <code>w3id.org</code> e identificadores deterministas (hash de la clave), de modo que reejecutar el ETL produce los mismos identificadores.</li>
+  <li><b>Perfil OWL 2 DL:</b> se evitaron tipos de datos fuera del mapa OWL 2 (<code>xsd:gYear</code>, <code>xsd:date</code>) para que razonadores completos como HermiT puedan trabajar.</li>
+</ol>
+
+<!-- ======================== 5 ======================== -->
+<h1><span class="num">5</span>De un dato crudo a conocimiento (ejemplo real)</h1>
+
+<h2>1. Lo que publica MinTIC (una de 208.803 filas)</h2>
+<pre>anno: 2023 | trimestre: 3 | proveedor: COMUNICACION CELULAR S A COMCEL S A
+cod_departamento: 11 | departamento: BOGOTÁ D.C. | cod_municipio: 11001 | municipio: BOGOTÁ, D.C.
+segmento: RESIDENCIAL - ESTRATO 3 | tecnologia: CABLE
+velocidad_bajada: <span class="s">"100,00"</span> | velocidad_subida: <span class="s">"10,00"</span> | no_de_accesos: 145</pre>
+<p>Observa: las velocidades vienen como <b>texto con coma decimal</b>, y cada fila es un plan de velocidad distinto.
+Para Claro, en Bogotá, estrato 3, cable, hay <b>385 filas</b> así (una por plan).</p>
+
+<h2>2. Cómo se mapea</h2>
+<table>
+  <tr><th>Columna CSV</th><th>Propiedad de la ontología</th><th>Transformación</th></tr>
+  <tr><td><code>proveedor</code></td><td><code>cot:reportadoPor</code></td><td>Comcel → <code>res:org-comcel</code> (entidad curada); otros → <code>res:org-{nombre}</code></td></tr>
+  <tr><td><code>cod_municipio</code></td><td><code>cot:enMunicipio</code></td><td>Código DANE a 5 dígitos → <code>res:municipio-11001</code></td></tr>
+  <tr><td><code>anno</code>, <code>trimestre</code></td><td><code>cot:enPeriodo</code></td><td><code>res:periodo-2023-T3</code> (OWL-Time)</td></tr>
+  <tr><td><code>tecnologia</code></td><td><code>cot:usaTecnologia</code></td><td>Texto normalizado → concepto SKOS buscado en la ontología</td></tr>
+  <tr><td><code>segmento</code></td><td><code>cot:enSegmento</code></td><td>“RESIDENCIAL - ESTRATO 3” → <code>cot:seg-estrato-3</code></td></tr>
+  <tr><td><code>no_de_accesos</code></td><td><code>cot:numeroAccesos</code></td><td>Suma de las filas agregadas</td></tr>
+  <tr><td><code>velocidad_*</code></td><td><code>cot:velocidadBajadaMbps</code> / <code>Subida</code></td><td>Coma → punto; promedio ponderado por accesos</td></tr>
+</table>
+
+<h2>3. El resultado en el grafo (Turtle)</h2>
+<pre><span class="k">res:obs-if-c69fa1c6fe176937</span> a cot:ObservacionAccesos ;
+    qb:dataSet            res:ds-internet-fijo-2023T3 ;
+    cot:reportadoPor      res:org-comcel ;            <span class="c"># Claro</span>
+    cot:enMunicipio       res:municipio-11001 ;       <span class="c"># Bogotá</span>
+    cot:enPeriodo         res:periodo-2023-T3 ;
+    cot:deServicio        res:servicio-internet-fijo ;
+    cot:usaTecnologia     cot:tec-cable ;
+    cot:enSegmento        cot:seg-estrato-3 ;
+    cot:numeroAccesos     <span class="s">"338204"</span>^^xsd:nonNegativeInteger ;
+    cot:velocidadBajadaMbps <span class="s">288.88</span> ;  cot:velocidadSubidaMbps <span class="s">33.93</span> ;
+    cot:numeroRegistrosFuente <span class="s">"385"</span>^^xsd:nonNegativeInteger ;   <span class="c"># 385 filas originales</span>
+    cot:tieneFuente       res:fuente-mintic-internet-fijo .   <span class="c"># trazabilidad (PROV-O)</span></pre>
+
+<h2>4. Lo que el razonador deduce sin que nadie lo escriba</h2>
+<div class="dos">
+  <div class="caja gris"><p><b>Escrito explícitamente</b></p><ul>
+    <li>La observación usa <code>tec-cable</code> y tiene 288,88 Mbps.</li>
+    <li>Bogotá pertenece al departamento 11.</li>
+    <li>Comcel es subsidiaria de América Móvil.</li></ul></div>
+  <div class="caja verde"><p><b>Inferido por el razonador</b></p><ul>
+    <li>Es una <code>ObservacionAltaVelocidad</code> (≥ 25 Mbps).</li>
+    <li>Bogotá está <code>ubicadoEn</code> Colombia (transitividad).</li>
+    <li>América Móvil <code>controla</code> a Comcel (propiedad inversa).</li>
+    <li>Comcel es una <code>org:Organization</code> (herencia de clases).</li></ul></div>
+</div>
+<p>En la muestra de Bogotá el grafo pasa de <b>4.190 a 10.428 tripletas</b> tras el razonamiento: 117 observaciones se
+clasifican como fibra óptica y 145 como alta velocidad. HermiT obtiene exactamente las mismas cifras.</p>
+
+<h2>5. Y se consulta así (SPARQL, pregunta CQ1)</h2>
+<pre><span class="k">SELECT</span> ?proveedor (SUM(?n) AS ?accesos)
+       (ROUND(10000 * SUM(?n) / ?total) / 100 AS ?participacionPct)
+<span class="k">WHERE</span> {
+  { <span class="k">SELECT</span> (SUM(?t) AS ?total) <span class="k">WHERE</span> { ?o a cot:ObservacionAccesos ; cot:numeroAccesos ?t } }
+  ?obs a cot:ObservacionAccesos ; cot:reportadoPor ?p ; cot:numeroAccesos ?n .
+  ?p cot:razonSocial ?proveedor .
+}
+<span class="k">GROUP BY</span> ?proveedor ?total  <span class="k">ORDER BY</span> DESC(?accesos)  <span class="k">LIMIT</span> 5</pre>
+
+<!-- ======================== 6 ======================== -->
+<h1><span class="num">6</span>Validación y calidad</h1>
+
+<table>
+  <tr><th style="width:26%">Verificación</th><th>Qué comprueba</th><th style="width:30%">Resultado</th></tr>
+  <tr><td><b>Pruebas unitarias</b> (pytest)</td><td>Que todas las tecnologías y segmentos de MinTIC tengan concepto en la ontología, conversión de decimales, casos SHACL válidos e inválidos.</td><td><span class="tag">15/15 aprobadas</span></td></tr>
+  <tr><td><b>SHACL</b> (pySHACL)</td><td>Calidad de las 23.317 observaciones y de las entidades de referencia.</td><td><span class="tag">Conforme</span> 0 violaciones · 236 advertencias · 466 s</td></tr>
+  <tr><td><b>HermiT</b> (OWL 2 DL)</td><td>Consistencia lógica completa de la ontología + datos de muestra (4.192 tripletas).</td><td><span class="tag">Consistente</span> 0 clases insatisfacibles · 16 s</td></tr>
+  <tr><td><b>OWL 2 RL</b> (owlrl)</td><td>Inferencias a escala: clases definidas, transitividad, inversas, subclases.</td><td>4.190 → 10.428 tripletas · resultados idénticos a HermiT</td></tr>
+  <tr><td><b>Exactitud</b></td><td>Suma de accesos del grafo frente a la suma del CSV original.</td><td><span class="tag">8.946.322 = 8.946.322</span></td></tr>
+  <tr><td><b>Cobertura funcional</b></td><td>Preguntas de competencia respondidas con SPARQL.</td><td><span class="tag">8/8 (100 %)</span></td></tr>
+</table>
+
+<h2>Qué revisan las 6 formas SHACL</h2>
+<table>
+  <tr><th style="width:24%">Forma</th><th>Reglas</th></tr>
+  <tr><td>Observación de accesos</td><td>Exactamente un proveedor, municipio, periodo y tecnología; al menos un servicio y una fuente; máximo un segmento; accesos enteros ≥ 0; velocidades ≥ 0; <i>advertencia</i> si la velocidad supera 10.000 Mbps.</td></tr>
+  <tr><td>Municipio</td><td>Código DANE de 5 dígitos; pertenece a un departamento; los 2 primeros dígitos coinciden con el código del departamento (regla SPARQL).</td></tr>
+  <tr><td>Departamento</td><td>Código DANE único de 2 dígitos.</td></tr>
+  <tr><td>Proveedor</td><td>Razón social obligatoria; NIT con formato válido si existe.</td></tr>
+  <tr><td>Trimestre</td><td>Año entre 2000 y 2100; trimestre 1-4.</td></tr>
+  <tr><td>Fuente de datos</td><td>Título y publicador (una organización) obligatorios.</td></tr>
+</table>
+
+<h2>Problemas técnicos encontrados y cómo se resolvieron</h2>
+<p>Este registro es valioso para el capítulo de implementación de la monografía: muestra rigor y aprendizaje.</p>
+<table>
+  <tr><th style="width:32%">Problema</th><th>Solución</th></tr>
+  <tr><td>SHACL con inferencia RDFS sobre 311 mil tripletas tardaba más de 10 minutos y no terminaba.</td><td>Validar entidades de referencia una vez y observaciones en lotes de 4.000, con la ontología incluida en el grafo (≈ 25 s fijos + 12 ms por observación).</td></tr>
+  <tr><td>Velocidades de hasta 500.000 Mbps en los datos oficiales.</td><td>Regla SHACL de severidad <i>advertencia</i> (no error) y filtro en la consulta CQ5.</td></tr>
+  <tr><td>HermiT rechazó <code>xsd:gYear</code> y <code>xsd:date</code> (no pertenecen al mapa de tipos OWL 2).</td><td>Cambio a <code>xsd:integer</code> (año) y <code>xsd:dateTime</code> (fechas).</td></tr>
+  <tr><td>Uso incorrecto de <code>rdfs:subPropertyOf qb:dimension</code>.</td><td>Tipado correcto como <code>qb:DimensionProperty</code> / <code>qb:MeasureProperty</code>.</td></tr>
+  <tr><td>Consulta CQ4 con <code>FILTER NOT EXISTS</code> extremadamente lenta.</td><td>Reescritura con subconsulta y <code>MINUS</code>.</td></tr>
+  <tr><td>La pregunta “penetración de fibra de Claro” no tenía respuesta: Claro no reporta FTTH.</td><td>Reformulación de CQ6 como “amenaza de fibra de la competencia” (hallazgo de negocio).</td></tr>
+</table>
+
+<!-- ======================== 7 ======================== -->
+<h1><span class="num">7</span>Resultados: preguntas de negocio respondidas</h1>
+<p>Las <b>preguntas de competencia</b> (CQ, <i>competency questions</i>) son los requisitos funcionales de una ontología:
+si el grafo las responde, la ontología cumple su propósito. Corte: internet fijo, 2023-T3 (8.946.322 accesos).</p>
+
+<table>
+  <tr><th style="width:7%">ID</th><th>Pregunta</th><th style="width:36%">Respuesta resumida</th></tr>
+  <tr><td>CQ1</td><td>¿Cuál es la participación nacional de Claro frente a sus competidores?</td><td>36,24 % (3.242.287 accesos), líder.</td></tr>
+  <tr><td>CQ2</td><td>¿Cuál es la participación de Claro por departamento?</td><td>Máxima en San Andrés (58,3 %), Cundinamarca (49,9 %), Bogotá (46,6 %).</td></tr>
+  <tr><td>CQ3</td><td>¿Cómo se distribuyen los accesos de Claro por tecnología?</td><td>99,7 % cable coaxial (HFC); 0,3 % inalámbrica fija.</td></tr>
+  <tr><td>CQ4</td><td>¿Dónde hay demanda y Claro no tiene presencia?</td><td>Peñol, Maicao, El Bagre, Dagua, Fundación…</td></tr>
+  <tr><td>CQ5</td><td>¿Cómo es la velocidad de Claro frente al mercado por estrato?</td><td>Superior en estratos 1, 2 y 6; inferior en 4, 5 y corporativo.</td></tr>
+  <tr><td>CQ6</td><td>¿Dónde la competencia ya tiene alta penetración de fibra?</td><td>Bogotá (79,6 %), Zipaquirá, Madrid, Facatativá, Tuluá, Cajicá.</td></tr>
+  <tr><td>CQ7</td><td>¿De qué fuente y publicador viene cada dato?</td><td>Dataset MinTIC <code>n48w-gutb</code>, con URL.</td></tr>
+  <tr><td>CQ8</td><td>¿Quién controla a Claro, qué absorbió y quién lo regula?</td><td>América Móvil; Telmex Colombia; MinTIC, CRC, ANE y SIC.</td></tr>
+</table>
+
+<figure><img src="img/cq1.png" style="width:88%"><figcaption>Figura 2. Claro lidera el internet fijo con más del doble de accesos que el segundo operador.</figcaption></figure>
+
+<figure><img src="img/cq2.png" style="width:88%"><figcaption>Figura 3. Participación de Claro por departamento (12 mayores). La línea punteada es el promedio nacional.</figcaption></figure>
+
+<div class="dos evitar" style="align-items:center">
+  <figure style="flex:0 0 42%"><img src="img/cq3.png"><figcaption>Figura 4. Mezcla tecnológica reportada por Claro.</figcaption></figure>
+  <div>
+    <h3>CQ3 · Lectura</h3>
+    <p>Según la información reportada a MinTIC, prácticamente toda la base fija de Claro está clasificada como
+    <b>CABLE</b> (red HFC). No aparecen accesos FTTH, a diferencia de otros operadores. Esto puede reflejar la forma de
+    reporte más que la red real, lo cual es en sí un hallazgo (ver sección 8).</p>
+  </div>
+</div>
+
+<figure><img src="img/cq4.png" style="width:88%"><figcaption>Figura 5. Municipios con mayor mercado de internet fijo donde Claro no reporta accesos: oportunidades de expansión.</figcaption></figure>
+
+<figure><img src="img/cq5.png" style="width:88%"><figcaption>Figura 6. Velocidad de bajada de plan (promedio ponderado por accesos; se excluyen valores atípicos &gt; 10.000 Mbps).</figcaption></figure>
+<p>Claro ofrece más velocidad que el mercado en estratos 1 (153 vs. 104 Mbps), 2 (200 vs. 151) y 6 (323 vs. 292), y queda por
+debajo en estratos 4, 5 y en el segmento corporativo (235 vs. 245 Mbps).</p>
+
+<figure><img src="img/cq6.png" style="width:88%"><figcaption>Figura 7. Municipios donde Claro tiene presencia y la competencia ya opera mayoritariamente con fibra.</figcaption></figure>
+<p>En Bogotá, el 79,6 % de los accesos de la competencia ya son fibra, mientras Claro tiene el 46,6 % del mercado con red
+HFC. El mismo patrón se repite en la Sabana (Zipaquirá, Madrid, Facatativá, Cajicá) y en Tuluá, Villavicencio e Ibagué.
+Es una alerta competitiva que la ontología hace visible gracias a la clasificación automática de tecnologías por familia.</p>
+
+<!-- ======================== 8 ======================== -->
+<h1><span class="num">8</span>Hallazgos sobre la calidad de los datos públicos</h1>
+<p>Un aporte del enfoque semántico es que, al formalizar el significado y validar automáticamente, salen a la luz problemas
+de las fuentes que en Excel pasan desapercibidos:</p>
+<ol>
+  <li><b>Tipos de datos inadecuados.</b> La API de MinTIC entrega todas las columnas como texto y las velocidades con coma
+  decimal. Por eso no se pueden sumar en el servidor y la agregación debe hacerse localmente.</li>
+  <li><b>Valores atípicos.</b> Hay planes reportados con velocidades de hasta 500.000 Mbps. SHACL generó 236 advertencias
+  automáticas sobre estos casos.</li>
+  <li><b>Granularidad tecnológica insuficiente.</b> Claro reporta solo “CABLE”, lo que impide distinguir el despliegue de
+  fibra hasta el hogar. Es un insumo para el área de Regulación sobre cómo se reporta y se percibe la red.</li>
+  <li><b>Razones sociales históricas.</b> El dataset conserva a Telmex Colombia (fusionada en Comcel). La ontología lo modela con
+  <code>cot:fusionadaEn</code> para unificar las series.</li>
+  <li><b>Rezago.</b> El último corte disponible en el dataset consultado es 2023-T3. El pipeline está parametrizado para
+  procesar cualquier trimestre en cuanto se publique.</li>
+</ol>
+
+<!-- ======================== 9 ======================== -->
+<h1><span class="num">9</span>Valor para Claro</h1>
+
+<table>
+  <tr><th style="width:20%">Área</th><th>Necesidad</th><th style="width:16%">Preguntas</th><th style="width:28%">Beneficio</th></tr>
+  <tr><td><b>Asuntos Regulatorios</b></td><td>Responder requerimientos de CRC y MinTIC; seguir la participación de mercado (relevante en análisis de posición dominante); conocer normas aplicables.</td><td>CQ1, CQ2, CQ7, CQ8 (+ CQ12 fase 2)</td><td>Cifras con trazabilidad a la fuente oficial, reproducibles.</td></tr>
+  <tr><td><b>Inteligencia de Mercado</b></td><td>Benchmark frente a la competencia por territorio, tecnología y estrato.</td><td>CQ1-CQ3, CQ5, CQ6</td><td>Respuestas en segundos en lugar de horas de cruce manual.</td></tr>
+  <tr><td><b>Planeación Comercial / Expansión</b></td><td>Priorizar municipios y despliegue de fibra.</td><td>CQ4, CQ6</td><td>Lista priorizada de oportunidades y amenazas.</td></tr>
+  <tr><td><b>Sostenibilidad</b></td><td>Indicadores de brecha digital por estrato y territorio.</td><td>CQ5 (+ CQ13 fase 2)</td><td>Base para reportes ESG con datos públicos.</td></tr>
+  <tr><td><b>Gobierno de Datos</b></td><td>Glosario y modelo de referencia común.</td><td>Toda la ontología</td><td>Vocabulario corporativo reutilizable y basado en estándares.</td></tr>
+</table>
+
+<h2>Cómo lo usaría un analista</h2>
+<div class="flujo">
+  <div class="paso f"><b>1. Pregunta</b>“¿Dónde la competencia tiene más fibra que nosotros?”</div>
+  <div class="flecha">➜</div>
+  <div class="paso"><b>2. Consulta</b>Abre el catálogo y ejecuta CQ6 en Fuseki/GraphDB (o desde el tablero).</div>
+  <div class="flecha">➜</div>
+  <div class="paso"><b>3. Resultado</b>Tabla por municipio con % de fibra de la competencia y participación de Claro.</div>
+  <div class="flecha">➜</div>
+  <div class="paso p"><b>4. Evidencia</b>Cada cifra enlaza al dataset oficial (CQ7). Exportable a Power BI.</div>
+</div>
+
+<div class="caja">
+  <p><b>Riesgo de confidencialidad: mínimo.</b> El proyecto usa solo información pública citada. Aun así, pide aval escrito
+  a tu jefe para usar el nombre “Claro” en la publicación académica (en el anexo de la propuesta hay un correo sugerido).
+  Plan B: presentarlo como caso de un “operador líder”.</p>
+</div>
+
+<!-- ======================== 10 ======================== -->
+<h1><span class="num">10</span>Cómo convertirlo en tu proyecto de grado</h1>
+
+<div class="caja azul">
+  <p><b>Pregunta de investigación.</b> ¿En qué medida una ontología OWL basada en estándares de la web semántica permite
+  integrar fuentes públicas heterogéneas del sector de telecomunicaciones colombiano y responder preguntas de negocio de
+  Claro de forma correcta, trazable y más eficiente que el proceso manual?</p>
+</div>
+
+<h2>Objetivos</h2>
+<p><b>General:</b> diseñar, implementar y evaluar una ontología OWL 2 y un grafo de conocimiento que integren datos públicos
+del sector TIC colombiano para apoyar preguntas de negocio de áreas de Claro.</p>
+<table>
+  <tr><th style="width:5%">#</th><th>Objetivo específico</th><th style="width:24%">Avance con el prototipo</th></tr>
+  <tr><td>1</td><td>Especificar requisitos (ORSD y preguntas de competencia) validados con al menos dos áreas de Claro.</td><td><span class="tag pend">CQ redactadas; falta validarlas con las áreas</span></td></tr>
+  <tr><td>2</td><td>Conceptualizar e implementar COTEL en OWL 2 reutilizando estándares.</td><td><span class="tag">hecho</span></td></tr>
+  <tr><td>3</td><td>ETL reproducible de al menos tres fuentes públicas con trazabilidad PROV-O.</td><td><span class="tag pend">1 de 3 fuentes (MinTIC)</span></td></tr>
+  <tr><td>4</td><td>Evaluar: OOPS!, FOOPS!, razonador, SHACL, cobertura de CQ y usuarios (SUS, tiempo).</td><td><span class="tag pend">razonador, SHACL y CQ hechos</span></td></tr>
+  <tr><td>5</td><td>Publicar el grafo en un punto SPARQL con documentación y tablero.</td><td><span class="tag pend">pendiente</span></td></tr>
+</table>
+
+<h2>Metodología: NeOn + guías de datos enlazados del W3C</h2>
+<table>
+  <tr><th style="width:24%">Fase</th><th>Actividades</th><th style="width:16%">Estado</th></tr>
+  <tr><td>F1 Especificación</td><td>Entrevistas con Regulatorio, Mercado y Planeación; preguntas de competencia.</td><td><span class="tag pend">por validar</span></td></tr>
+  <tr><td>F2 Reutilización</td><td>Selección de vocabularios (LOV) y matriz de reutilización.</td><td><span class="tag">hecho</span></td></tr>
+  <tr><td>F3 Implementación</td><td>Clases, relaciones, axiomas, SKOS (Protégé / Turtle).</td><td><span class="tag">hecho</span></td></tr>
+  <tr><td>F4 Población (ETL)</td><td>MinTIC hecho; histórico, CRC, ANE y SIC pendientes.</td><td><span class="tag pend">parcial</span></td></tr>
+  <tr><td>F5 Validación</td><td>SHACL y HermiT hechos; OOPS! y FOOPS! pendientes.</td><td><span class="tag pend">parcial</span></td></tr>
+  <tr><td>F6 Explotación</td><td>Fuseki/GraphDB y tablero.</td><td><span class="tag pend">pendiente</span></td></tr>
+  <tr><td>F7 Evaluación con usuarios</td><td>5-8 usuarios de Claro: tiempo y exactitud grafo vs. Excel; cuestionario SUS.</td><td><span class="tag pend">pendiente</span></td></tr>
+  <tr><td>F8 Documentación</td><td>WIDOCO, monografía, artículo.</td><td><span class="tag pend">pendiente</span></td></tr>
+</table>
+
+<h2>Métricas de evaluación</h2>
+<table>
+  <tr><th>Dimensión</th><th>Métrica</th><th>Meta</th><th>Resultado actual</th></tr>
+  <tr><td>Consistencia lógica</td><td>HermiT</td><td>100 %</td><td><span class="tag">consistente</span></td></tr>
+  <tr><td>Calidad del modelado</td><td>OOPS! (problemas críticos)</td><td>0</td><td><span class="tag pend">por medir</span></td></tr>
+  <tr><td>FAIR</td><td>FOOPS!</td><td>≥ 70 %</td><td><span class="tag pend">por medir</span></td></tr>
+  <tr><td>Cobertura funcional</td><td>CQ respondidas</td><td>≥ 90 %</td><td><span class="tag">100 % (8/8)</span></td></tr>
+  <tr><td>Calidad de datos</td><td>Violaciones SHACL</td><td>0</td><td><span class="tag">0</span></td></tr>
+  <tr><td>Exactitud</td><td>Diferencia con la fuente</td><td>0</td><td><span class="tag">0</span></td></tr>
+  <tr><td>Eficiencia</td><td>Tiempo grafo vs. Excel</td><td>−50 %</td><td><span class="tag pend">por medir</span></td></tr>
+  <tr><td>Usabilidad</td><td>SUS</td><td>≥ 68</td><td><span class="tag pend">por medir</span></td></tr>
+</table>
+
+<h2>Cronograma sugerido (16 semanas)</h2>
+<table class="peq">
+  <tr><th>Actividad</th><th>1-2</th><th>3-4</th><th>5-6</th><th>7-8</th><th>9-10</th><th>11-12</th><th>13-14</th><th>15-16</th></tr>
+  <tr><td>Especificación y validación de CQ con Claro</td><td>■</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>Revisión sistemática (estado del arte)</td><td>■</td><td>■</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>Ajustes a la ontología</td><td></td><td>■</td><td>■</td><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>ETL: histórico MinTIC + CRC</td><td></td><td></td><td>■</td><td>■</td><td></td><td></td><td></td><td></td></tr>
+  <tr><td>ETL: ANE + SIC + datos corporativos</td><td></td><td></td><td></td><td>■</td><td>■</td><td></td><td></td><td></td></tr>
+  <tr><td>Validación (SHACL, OOPS!, FOOPS!, HermiT)</td><td></td><td></td><td></td><td></td><td>■</td><td>■</td><td></td><td></td></tr>
+  <tr><td>Fuseki/GraphDB + tablero</td><td></td><td></td><td></td><td></td><td></td><td>■</td><td></td><td></td></tr>
+  <tr><td>Evaluación con usuarios</td><td></td><td></td><td></td><td></td><td></td><td></td><td>■</td><td></td></tr>
+  <tr><td>Monografía, artículo y sustentación</td><td></td><td></td><td></td><td></td><td></td><td>■</td><td>■</td><td>■</td></tr>
+</table>
+
+<h2>¿Monografía o artículo?</h2>
+<div class="dos">
+  <div class="caja gris"><p><b>Monografía (60-100 páginas).</b> Documenta todo el producto (ETL, ontología, evaluación) y
+  sirve como manual para Claro. Estructura: introducción, marco teórico, estado del arte, metodología, especificación,
+  diseño de COTEL, población del grafo, evaluación, producto para Claro, conclusiones.</p></div>
+  <div class="caja gris"><p><b>Artículo (12-20 páginas, IMRyD).</b> Mayor visibilidad académica. Posibles destinos: KGSWC,
+  pósteres/demos de ESWC o ISWC, revistas <i>TecnoLógicas</i>, <i>DYNA</i>, <i>Ingeniería y Ciencia</i>.</p></div>
+</div>
+<p><b>Recomendación:</b> monografía como entregable principal y un artículo corto derivado. Antes de decidir, confirma qué exige tu universidad.</p>
+
+<!-- ======================== 11 ======================== -->
+<h1><span class="num">11</span>Qué se entregó y cómo ejecutarlo</h1>
+
+<h2>Estructura de la carpeta</h2>
+<pre>ontologia-claro/
+├── 01_Propuesta_Proyecto_Grado.md     Propuesta académica completa (18 secciones + correo para tu jefe)
+├── COTEL_Como_funciona.pdf            Este documento
+├── README.md                          Instrucciones técnicas
+├── ontologia/
+│   ├── cotel.ttl                      Ontología OWL 2 DL
+│   └── cotel-shapes.ttl               Formas SHACL
+├── datos/
+│   ├── base_curada.ttl                Organizaciones, reguladores y fuentes
+│   ├── crudo_internet_fijo_2023T3.csv Descarga original de MinTIC
+│   └── cotel_internet_fijo_2023T3.ttl Grafo generado
+├── pipeline/
+│   ├── 01_descargar.py · 02_transformar_rdf.py · 03_validar_razonar_consultar.py
+│   ├── 04_verificar_owl_dl.py          Verificación con HermiT
+│   └── test_pipeline.py               15 pruebas
+├── consultas/CQ1 … CQ8 (.rq)          Preguntas de competencia en SPARQL
+├── resultados/                        CSV por CQ, reporte SHACL, resumen y verificación DL
+└── docs/                              Generador de este PDF y sus gráficos</pre>
+
+<h2>Instalación y ejecución (Windows, PowerShell)</h2>
+<pre><span class="c"># una sola vez</span>
+python -m venv .venv
+.venv\Scripts\activate
+pip install rdflib pyshacl requests pytest owlready2 matplotlib
+
+<span class="c"># pipeline completo</span>
+python pipeline\01_descargar.py --anio 2023 --trimestre 3
+python pipeline\02_transformar_rdf.py
+python -m pytest -q pipeline
+python pipeline\03_validar_razonar_consultar.py              <span class="c"># o --solo-consultas (rápido)</span>
+python pipeline\04_verificar_owl_dl.py --municipio 11001     <span class="c"># requiere Java</span></pre>
+
+<h2>Herramientas para explorar visualmente</h2>
+<ul>
+  <li><b>Protégé</b> (gratuito, Stanford): abre <code>cotel.ttl</code>, explora clases y ejecuta HermiT desde el menú <i>Reasoner</i>.</li>
+  <li><b>GraphDB Free</b> o <b>Apache Jena Fuseki</b>: carga los tres archivos <code>.ttl</code>, activa reglas OWL2-RL y ejecuta las consultas de <code>consultas/</code>.</li>
+  <li><b>OOPS!</b> (oops.linkeddata.es) y <b>FOOPS!</b> (foops.linkeddata.es): evaluación de calidad y principios FAIR.</li>
+  <li><b>WIDOCO</b>: genera la documentación HTML de la ontología.</li>
+</ul>
+
+<!-- ======================== 12 ======================== -->
+<h1><span class="num">12</span>Limitaciones, pendientes y siguientes pasos</h1>
+
+<h2>Limitaciones actuales</h2>
+<ul>
+  <li>Una sola fuente poblada (internet fijo de MinTIC) y un solo corte (2023-T3).</li>
+  <li>Las velocidades son <b>de plan</b> (ofrecidas), no medidas.</li>
+  <li>El razonamiento completo se ejecuta sobre una muestra (Bogotá). Para todo el grafo se recomienda OWL 2 RL en el triplestore.</li>
+  <li>Las participaciones se calculan sobre accesos reportados; dependen de la calidad del reporte de cada operador.</li>
+</ul>
+
+<h2>Datos que debes verificar antes de publicar</h2>
+<table>
+  <tr><th>Dato</th><th>Dónde está</th><th>Cómo verificarlo</th></tr>
+  <tr><td>NIT de Comcel (800153993-7)</td><td><code>base_curada.ttl</code></td><td>RUES o certificado de Cámara de Comercio.</td></tr>
+  <tr><td>Fecha y acto de la fusión Telmex-Comcel</td><td><code>base_curada.ttl</code></td><td>Superintendencia de Sociedades / informes de Claro.</td></tr>
+  <tr><td>Licencia del dataset MinTIC</td><td><code>base_curada.ttl</code></td><td>Ficha del dataset en datos.gov.co.</td></tr>
+  <tr><td>Referencias bibliográficas</td><td>Propuesta, sección 18</td><td>Scopus, IEEE Xplore, Google Scholar.</td></tr>
+</table>
+
+<h2>Siguientes pasos recomendados</h2>
+<ol>
+  <li><b>Aval:</b> envía a tu jefe el correo del anexo A de la propuesta y presenta este PDF.</li>
+  <li><b>Director de tesis:</b> valida con tu universidad la modalidad (monografía o artículo) y el formato.</li>
+  <li><b>Validar las preguntas de competencia</b> con Regulatorio, Mercado y Planeación; agregar las que pidan.</li>
+  <li><b>Fase 2 de datos:</b> histórico de MinTIC (CQ9, evolución trimestral), espectro ANE (CQ10), quejas CRC/SIC (CQ11), resoluciones CRC (CQ12) y estrato vs. fibra (CQ13).</li>
+  <li><b>Evaluación de calidad:</b> pasar la ontología por OOPS! y FOOPS! y corregir lo que reporten.</li>
+  <li><b>Producto:</b> desplegar en GraphDB/Fuseki y construir un tablero sobre el punto SPARQL.</li>
+  <li><b>Evaluación con usuarios:</b> 5-8 analistas, misma pregunta con Excel y con el grafo; medir tiempo, exactitud y SUS.</li>
+  <li><b>Trabajo futuro:</b> enlazar con Wikidata y la geometría de DIVIPOLA (mapas), publicar en w3id.org y LOV, y añadir una interfaz en lenguaje natural (texto a SPARQL) con respuestas verificables.</li>
+</ol>
+
+<!-- ======================== GLOSARIO ======================== -->
+<h1><span class="num">A</span>Glosario</h1>
+<table>
+  <tr><th style="width:24%">Término</th><th>Definición</th></tr>
+  <tr><td>Axioma</td><td>Regla lógica de la ontología (p. ej., “ubicadoEn es transitiva”).</td></tr>
+  <tr><td>Clase definida</td><td>Clase cuyos miembros se determinan por condiciones; el razonador los identifica automáticamente.</td></tr>
+  <tr><td>CQ (pregunta de competencia)</td><td>Pregunta que la ontología debe poder responder; funciona como requisito y como prueba.</td></tr>
+  <tr><td>DANE / DIVIPOLA</td><td>Codificación oficial de departamentos (2 dígitos) y municipios (5 dígitos) de Colombia.</td></tr>
+  <tr><td>ETL</td><td>Extraer, transformar y cargar: proceso que convierte datos crudos al formato destino.</td></tr>
+  <tr><td>FAIR</td><td>Principios para datos encontrables, accesibles, interoperables y reutilizables.</td></tr>
+  <tr><td>Grafo de conocimiento</td><td>Red de entidades y relaciones con significado formal, consultable y razonable.</td></tr>
+  <tr><td>HermiT</td><td>Razonador completo para OWL 2 DL; verifica consistencia y clasifica.</td></tr>
+  <tr><td>HFC / FTTH</td><td>Red híbrida fibra-coaxial (cable) / fibra hasta el hogar.</td></tr>
+  <tr><td>Inferencia</td><td>Hecho nuevo deducido por el razonador a partir de los axiomas y los datos.</td></tr>
+  <tr><td>IRI</td><td>Identificador global único (similar a una URL) de cada entidad.</td></tr>
+  <tr><td>NeOn</td><td>Metodología de ingeniería ontológica basada en escenarios de reutilización.</td></tr>
+  <tr><td>OWL 2 DL / RL</td><td>Perfiles del lenguaje de ontologías: DL es completo y expresivo; RL es más limitado pero escala con reglas.</td></tr>
+  <tr><td>RDF / tripleta</td><td>Modelo de datos en el que todo se expresa como sujeto-predicado-objeto.</td></tr>
+  <tr><td>SHACL</td><td>Lenguaje del W3C para validar grafos RDF contra “formas”.</td></tr>
+  <tr><td>SKOS</td><td>Vocabulario del W3C para taxonomías y tesauros.</td></tr>
+  <tr><td>SPARQL</td><td>Lenguaje de consulta para grafos RDF.</td></tr>
+  <tr><td>SUS</td><td>System Usability Scale: cuestionario estándar de 10 preguntas sobre usabilidad.</td></tr>
+  <tr><td>Triplestore</td><td>Base de datos especializada en RDF (Fuseki, GraphDB).</td></tr>
+</table>
+
+<p class="peq" style="margin-top:8mm">Fuente de datos: Ministerio de Tecnologías de la Información y las Comunicaciones,
+“Internet Fijo Accesos por tecnología y segmento” (datos.gov.co, dataset n48w-gutb), corte 2023-T3. Cifras calculadas por
+el prototipo COTEL. Las participaciones corresponden a accesos reportados por los proveedores.</p>
+
+<script>
+  // Mantiene cada subtítulo en la misma página que el bloque que lo sigue.
+  document.querySelectorAll("h2, h3").forEach(function (h) {
+    var siguiente = h.nextElementSibling;
+    if (!siguiente) return;
+    var envoltura = document.createElement("div");
+    envoltura.className = "evitar";
+    h.parentNode.insertBefore(envoltura, h);
+    envoltura.appendChild(h);
+    envoltura.appendChild(siguiente);
+  });
+</script>
+
+</body>
+</html>
